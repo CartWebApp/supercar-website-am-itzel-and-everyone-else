@@ -9,20 +9,72 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><img src="images/all/ham-menu.png"></li>
-                <li></li>
-                <li></li>
-                <li><img src=""></li> 
-                <li><img src=""></li>
+        <nav role="navigation" class="topnav">
+            <ul class="topnav-left">
+                <li  id="nav-ham-menu"><img src="images/all/ham-menu.png"></li>
+                <li  id="nav-menu">MENU</li>
             </ul>
+
+            <ul class="topnav-mid">
+                <li  id="nav-tri-icon"><img src="images/all/icon.png"></li>
+            </ul>
+
+            <ul class="topnav-right">
+                <li  id="nav-mag-glass"><img src="images/all/mag-glass.png"></li> 
+                <li  id="nav-profile"><img src="images/all/profile.png"></li>
+            </ul>
+           
         </nav>
     </header>
     
 </body>
 </html>
+<style>
+    body { 
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
 
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        height: 6.944vw;
+        background-color: grey;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 33.33%;
+        height: 80%;
+        justify-content: center;;
+        align-items: center;
+        list-style-type: none;
+    }
+    .topnav ul li img {
+        height: 8vh;
+        margin-bottom: 0;
+    }
+
+    .topnav-left {
+        justify-content: flex-start;
+        align-items:center;
+        padding-left: 1vw;
+    }
+
+    .topnav-right { 
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1vw;
+    }
+</style>
 
 <!-- Attributions -->
  <!-- menu by Rohith M S from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a> (CC BY 3.0) -->
