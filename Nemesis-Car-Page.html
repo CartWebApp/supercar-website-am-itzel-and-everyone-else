@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemesis Car Page</title>
+    <link rel="icon" href="images/all/icon.png"></link>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>place holder</nav>
+
+
+    <div class="hero-img"> <!--this is the container for the hero image-->
+        <button>Nemesis RR</button>
+            <div class="top-4-stats">
+                <p>Max Speed<br>270+mph</p>
+                <p>Max Speed<br>270+mph</p>
+                <p>Max Speed<br>270+mph</p>
+                <p>Max Speed<br>270+mph</p>
+            </div>
+    </div>
+
+
+    <!-- boxes page here -->
+       <div class="cards">
+            <div class="big-card">
+                <div class="imgstuff">
+                    <img src="images/imgdump/galleryimgs/front.png">
+                    <h2>Exterior</h2>
+                </div>
+                <div class="text">
+                    <p>Body</p>
+                    <p>Rims</p>
+                </div>
+            </div>
+            <div class="big-card">
+                <div class="imgstuff">
+                    <img src="images/imgdump/galleryimgs/front.png">
+                    <h2>Exterior</h2>
+                </div>
+                <div class="text">
+                    <p>Body</p>
+                    <p>Rims</p>
+                </div>
+            </div>
+      </div>
+      
+
+                
+            <!-- lil boxes page -->
+
+
+
+</body>
+<style>
+    /* stoping here for now bc i have questions */
+
+    
+    body{
+        
+        margin: 0;
+        padding: 0;
+        color: white;
+        /* delt later */
+        
+    }
+    .hero-img{
+        background-image: url(images/imgdump/galleryimgs/9_26-dp-coverprac_fin-1024x575.png);
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    nav{
+        color: white;
+        background-color: black;
+        height: 4vh;
+        text-align: center;
+    }
+    button{
+        background-color: #003B76;
+        color: white;
+        padding: .5vh 4vh;
+        border: none;
+        margin-top: 2vh;
+    }
+    .top-4-stats{
+        color: white;
+        display: flex;
+        justify-self: center;
+        /* margin-left: ; */
+        align-self: flex-end;
+        gap: 4%;
+    }
+    .top-4-stats > p{
+        /* margin-left: 1%; */
+        /* margin-right: 2%; */
+        width: 60%;
+    }
+
+    /* stoping here for now bc i have questions above */
+    /* the two cards are below */
+    .cards{
+        margin-top: 20vh;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+
+    
+    
+    .big-card { 
+        width: 38.194vw;
+        height: 48.681vw;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgstuff { 
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgstuff img { 
+        width: 100%;
+    }
+    .imgstuff h2 {
+        position: absolute;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-self: flex-end;
+    }
+    .text{
+        /* card witdth 38.194 vw, height = 48.681 for vw */
+        text-align: center;
+
+    }
+   
+
+    
+    </style>
+</html>
