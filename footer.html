@@ -14,70 +14,75 @@
     <link rel="icon" href="images/all/icon.png"></link>
 </head>
 <body>
-    <div class="footer">
+
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+
+    <footer>
         <div class="top">
-            <div class="account">
+            <div class="account footermedia">
                 <h2>Account</h2>
-                <p>Settings</p>
-                <p>Saved Car Configurations</p>
-                <p>Order History</p>
+                <a>Settings</a>
+                <a>Saved Car Configurations</a>
+                <a>Order History</a>
             </div>
-            <div class="dealerships">
+            <div class="dealerships footermedia">
                 <h2>Dealerships</h2>
-                <p>Locations</p>
+                <a>Locations</a>
             </div>
-            <div class="nemesis-rr">
+            <div class="nemesis-rr footermedia">
                 <h2>Nemesis RR</h2>
-                <p>Overview</p>
-                <p>Customize</p>
+                <a>Overview</a>
+                <a>Customize</a>
             </div>
-            <div class="black-widow">
+            <div class="black-widow footermedia">
                 <h2>Black Widow</h2>
-                <p>Overview</p>
-                <p>Customize</p>
+                <a>Overview</a>
+                <a>Customize</a>
             </div>
-            <div class="services">
+            <div class="services footermedia">
                 <h2>Services</h2>
-                <P>Insurance</P>
-                <p>Part Replacement</p>
-                <p>Customor Help</p>
+                <a>Insurance</a>
+                <a>Part Replacement</a>
+                <a>Customor Help</a>
             </div>
         </div>
         <div class="middle">
-            <div class="merchandise">
+            <div class="merchandise footermedia">
                 <h2>Merchandise</h2>
-                <p>All Merchandise</p>
-                <p>Men</p>
-                <p>Women</p>
-                <p>Accessories</p>
+                <a>All Merchandise</a>
+                <a>Men</a>
+                <a>Women</a>
+                <a>Accessories</a>
             </div>
-            <div class="about-us">
+            <div class="about-us footermedia">
                 <h2>About Us</h2>
-                <p>Mission</p>
-                <p>Press</p>
-                <p>Contact Us</p>
+                <a>Mission</a>
+                <a>Press</a>
+                <a>Contact Us</a>
             </div>
-            <div class="legal">
+            <div class="legal footermedia">
                 <h2>Legal</h2>
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-                <p>Cookies</p>
+                <a>Terms & Conditions</a>
+                <a>Privacy Policy</a>
+                <a>Cookies</a>
             </div>
-            <div class="social">
+            <div class="social footermedia">
                 <h2>Social</h2>
                 <div class="icons">
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
+                    <img src="images/all/instagram.png" alt="instagram logo" id="instagram">
+                    <img src="images/all/facebook.png" alt="facebook logo" id="facebook">
+                    <img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin">
                 </div>
             </div>
             
         </div>
         <div class="bottom">
-            <img src="images/all/icon.png" height="100px"><!--get rid of the resize later-->
+            <img src="images/all/icon.png" id="footer-tri-icon" alt="trion icon" href="index.html">
             <h3 class="bot-deets">© 2025 by  TRION.</h3>
         </div>
-    </div>
+    </footer>
 
 
 
@@ -101,29 +106,33 @@
             background-color: #050133;
             color: white;
         }
-        .top{
-            width: 97vw;
+
+        footer { 
+            background-color: #08006A;
+        }
+        footer .top{
+            width: fit-content;
             margin-top: 9%;
             display: flex;
             justify-content: flex-start; /*yeah, i know its not what it looks like in the 
             figma but this could be better because i see dead space in the figma*/
-            margin-left: 3vw;
+            margin-left: 8vw;
 
         }
-        .middle{
-            width: 97vw;
+        footer .middle{
+            width: fit-content;
             display: flex;
             justify-content: flex-start;
-            margin-left: 3vw;
+            margin-left: 8vw;
 
         }
         
-        .bottom{
+        footer .bottom{
             /* display: inline; */
             /* position: relative; */
             margin-top: 5%;
-            width: 100vw;
             justify-items: center;
+
 
         }
         .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
@@ -137,24 +146,49 @@
             width: 18vw;
             text-overflow: none;
         }
-        p{
+        footer a{
             margin-top: 10%;
             font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
             /* font-size: 24px; */
         }
-        .bot-deets{
+        footer a:hover { 
+            cursor: pointer;
+        }
+
+        footer .bot-deets{
             font-size: .9em;
         }
-        h2{
+        footer h2{
             margin-top: 30%;
             /* font-size: 32px; */
             font-size: 2rem;
         }
-        h3{
+        footer h3{
             margin-top: 2%;
         }
 
+        #instagram, #linkedin, #facebook { 
+            margin-top: 2vw;
+            height: 3vw;
 
+            
+        }
+        .icons { 
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+
+        }
+        .footermedia { 
+            display: flex;
+            flex-direction: column;
+        }
+        #footer-tri-icon { 
+            height: 5vw;
+
+        }
 
     </style>
         
