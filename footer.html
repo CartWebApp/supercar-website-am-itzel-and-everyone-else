@@ -1,0 +1,152 @@
+<!-- i dident push on the one i was working on... and i dont want to mess it up, so heres this -->
+
+
+<!-- for the types of font type...
+24px = 1.5rem
+32px = 2rem -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link rel="icon" href="images/all/icon.png"></link>
+</head>
+<body>
+    <div class="footer">
+        <div class="top">
+            <div class="account">
+                <h2>Account</h2>
+                <p>Settings</p>
+                <p>Saved Car Configurations</p>
+                <p>Order History</p>
+            </div>
+            <div class="dealerships">
+                <h2>Dealerships</h2>
+                <p>Locations</p>
+            </div>
+            <div class="nemesis-rr">
+                <h2>Nemesis RR</h2>
+                <p>Overview</p>
+                <p>Customize</p>
+            </div>
+            <div class="black-widow">
+                <h2>Black Widow</h2>
+                <p>Overview</p>
+                <p>Customize</p>
+            </div>
+            <div class="services">
+                <h2>Services</h2>
+                <P>Insurance</P>
+                <p>Part Replacement</p>
+                <p>Customor Help</p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="merchandise">
+                <h2>Merchandise</h2>
+                <p>All Merchandise</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Accessories</p>
+            </div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Mission</p>
+                <p>Press</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="legal">
+                <h2>Legal</h2>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+                <p>Cookies</p>
+            </div>
+            <div class="Social">
+                <h2>Social</h2>
+                <div class="icons">
+                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
+                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
+                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="images/all/icon.png" height="100px"><!--get rid of the resize later-->
+            <h3 class="bot-deets">© 2025 by  TRION.</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Jim+Nightshade&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Lexend Deca";
+        }
+        body{
+            background-color: #050133;
+            color: white;
+        }
+        .middle{
+            display: flex;
+            justify-content: flex-start;
+            gap: 3vh;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .top{
+            margin-top: 9%;
+            display: flex;
+            justify-content: space-around; /*yeah, i know its not what it looks like in the 
+            figma but this could be better because i see dead space in the figma*/
+            gap: 3vh;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        .bottom{
+            /* display: inline; */
+            /* position: relative; */
+            margin-top: 5%;
+            width: 100%;
+            justify-items: center;
+        }
+        .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
+            width: 18%;
+            text-overflow: none;
+        }
+        p{
+            margin-top: 10%;
+            font-size: 1.5rem;
+            /* font-size: 24px; */
+        }
+        .bot-deets{
+            font-size: .9em;
+        }
+        h2{
+            margin-top: 30%;
+            /* font-size: 32px; */
+            font-size: 2rem;
+        }
+        h3{
+            margin-top: 2%;
+        }
+
+
+
+    </style>
+        
+</body>
+</html>
