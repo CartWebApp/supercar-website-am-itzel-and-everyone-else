@@ -14,7 +14,12 @@
     <link rel="icon" href="images/all/icon.png"></link>
 </head>
 <body>
-    <div class="footer">
+
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+    <!-- JEREMY CHANGE P'S TO "a" TAGS -->
+
+    <footer>
         <div class="top">
             <div class="account">
                 <h2>Account</h2>
@@ -66,9 +71,9 @@
             <div class="social">
                 <h2>Social</h2>
                 <div class="icons">
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
-                    <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
+                    <img src="images/all/instagram.png" alt="instagram logo" id="instagram"> <!--get rid of the resize later-->
+                    <img src="images/all/facebook.png" alt="facebook logo" id="facebook"> <!--get rid of the resize later-->
+                    <img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin"> <!--get rid of the resize later-->
                 </div>
             </div>
             
@@ -77,7 +82,7 @@
             <img src="images/all/icon.png" height="100px"><!--get rid of the resize later-->
             <h3 class="bot-deets">© 2025 by  TRION.</h3>
         </div>
-    </div>
+    </footer>
 
 
 
@@ -101,8 +106,12 @@
             background-color: #050133;
             color: white;
         }
-        .top{
-            width: 97vw;
+
+        footer { 
+            background-color: #08006A;
+        }
+        footer .top{
+            width: fit-content;
             margin-top: 9%;
             display: flex;
             justify-content: flex-start; /*yeah, i know its not what it looks like in the 
@@ -110,20 +119,20 @@
             margin-left: 3vw;
 
         }
-        .middle{
-            width: 97vw;
+        footer .middle{
+            width: fit-content;
             display: flex;
             justify-content: flex-start;
             margin-left: 3vw;
 
         }
         
-        .bottom{
+        footer .bottom{
             /* display: inline; */
             /* position: relative; */
             margin-top: 5%;
-            width: 100vw;
             justify-items: center;
+
 
         }
         .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
@@ -137,21 +146,34 @@
             width: 18vw;
             text-overflow: none;
         }
-        p{
+        footer p{
             margin-top: 10%;
             font-size: 1.5rem;
             /* font-size: 24px; */
         }
-        .bot-deets{
+        footer .bot-deets{
             font-size: .9em;
         }
-        h2{
+        footer h2{
             margin-top: 30%;
             /* font-size: 32px; */
             font-size: 2rem;
         }
-        h3{
+        footer h3{
             margin-top: 2%;
+        }
+
+        #instagram, #linkedin, #facebook { 
+            margin-top: 2vw;
+            height: 3vw;
+
+            
+        }
+        .icons { 
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+
         }
 
 
