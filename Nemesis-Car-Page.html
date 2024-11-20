@@ -8,10 +8,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>place holder</nav>
+    <!-- HEADER -->
+    <header>
+        <nav class="topnav" role="navigation">
+            <ul class="topnav-left">
+                <li  id="nav-ham-menu"><img src="images/all/ham-menu.png"></li>
+                <li  id="nav-menu">MENU</li>
+            </ul>
 
+            <ul class="topnav-mid">
+                <li  id="nav-tri-icon"><img src="images/all/icon.png" href="index.html"></li>
+            </ul>
 
+            <ul class="topnav-right">
+                <li  id="nav-mag-glass"><img src="images/all/mag-glass.png"></li> 
+                <li  id="nav-profile"><img src="images/all/profile.png"></li>
+            </ul>
+           
+        </nav>
+    </header>
+    <!-- HEADER -->
+
+<!-- GIANT ASS BLACK CAR IMG START HERE-->
     <div class="hero-img"> <!--this is the container for the hero image-->
+        <img src="images/imgdump/galleryimgs/7_25-Lux-Black-Nemesis_fr-crop-1024x576">
         <button>Nemesis RR</button>
             <div class="top-4-stats">
                 <p>Max Speed<br>270+mph</p>
@@ -20,6 +40,9 @@
                 <p>Max Speed<br>270+mph</p>
             </div>
     </div>
+
+
+<!-- GIANT ASS BLACK CAR IMG END HERE -->
 
 
     <!-- boxes page here -->
@@ -56,6 +79,74 @@
 <style>
     /* stoping here for now bc i have questions */
 
+    body { 
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        position: fixed;
+        z-index: 69419; /*could also be 1*/
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        height: 6.944vw;
+        background: linear-gradient(to bottom,#050133, rgba(0,0,0,0.0));
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 33.33%;
+        height: 80%;
+        justify-content: center;;
+        align-items: center;
+        list-style-type: none;
+    }
+    .topnav ul li img {
+        height: 6vw;
+        margin-bottom: 0;
+    }
+
+    #nav-menu { 
+        margin-left: 1.550vw;
+    }
+    #nav-ham-menu img{
+        height: 3.125vw;
+    }
+    #nav-mag-glass img {
+        height: 3.333vw;
+        margin-right: 2.5vw;
+    }
+    #nav-profile img {
+        height: 4.306vw;
+    }
+
+    .topnav-left {
+        justify-content: flex-start;
+        align-items:center; 
+        padding-left: 1.744vw;
+        font-size: 36px;
+        color: white;
+
+    }
+
+    .topnav-right { 
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1.744vw;
+    }
+
+
+
+
     
     body{
         
@@ -66,7 +157,7 @@
         
     }
     .hero-img{
-        background-image: url(images/imgdump/galleryimgs/9_26-dp-coverprac_fin-1024x575.png);
+       
         height: 40vh;
         background-repeat: no-repeat;
         background-position: center;
