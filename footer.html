@@ -63,7 +63,7 @@
                 <p>Privacy Policy</p>
                 <p>Cookies</p>
             </div>
-            <div class="Social">
+            <div class="social">
                 <h2>Social</h2>
                 <div class="icons">
                     <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
@@ -71,6 +71,7 @@
                     <img src="placeholder.png" width="50vh"> <!--get rid of the resize later-->
                 </div>
             </div>
+            
         </div>
         <div class="bottom">
             <img src="images/all/icon.png" height="100px"><!--get rid of the resize later-->
@@ -100,31 +101,40 @@
             background-color: #050133;
             color: white;
         }
-        .middle{
-            display: flex;
-            justify-content: flex-start;
-            gap: 3vh;
-            margin-left: 3%;
-            margin-right: 3%;
-        }
         .top{
+            width: 97vw;
             margin-top: 9%;
             display: flex;
-            justify-content: space-around; /*yeah, i know its not what it looks like in the 
+            justify-content: flex-start; /*yeah, i know its not what it looks like in the 
             figma but this could be better because i see dead space in the figma*/
-            gap: 3vh;
-            margin-left: 3%;
-            margin-right: 3%;
+            margin-left: 3vw;
+
         }
+        .middle{
+            width: 97vw;
+            display: flex;
+            justify-content: flex-start;
+            margin-left: 3vw;
+
+        }
+        
         .bottom{
             /* display: inline; */
             /* position: relative; */
             margin-top: 5%;
-            width: 100%;
+            width: 100vw;
             justify-items: center;
+
         }
         .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
-            width: 18%;
+            width: 18vw;
+            text-overflow: none;
+
+        }
+
+        .social { 
+            align-self: flex-start;
+            width: 18vw;
             text-overflow: none;
         }
         p{
