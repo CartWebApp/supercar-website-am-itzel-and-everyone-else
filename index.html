@@ -26,6 +26,8 @@
            
         </nav>
     </header>
+
+
     <div class="hero-img">
         <div class="hero-img-stuff">
             <img src="images/imgdump/galleryimgs/top-angle-open-doors-orange-shadow.png">
@@ -45,6 +47,11 @@
             </div>
         </section>
     </div>
+
+
+
+
+
 
     <div class="nem-quick-desc">
         <div class="overlayed-photos">
@@ -75,7 +82,18 @@
         </div>
     </div>
 
-
+    <div class="sideview-nem-showcase">
+        <img src="images/home/side-view-black-shadow.png">
+        <div class="nem-name">
+            <p>Nemesis RR</p>
+        </div>
+        <div class="customize-cont">
+            <a id="customize-button" href="#">
+                <p>Customize</p>
+                <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
+            </a>
+        </div>
+    </div>
 
 
 
@@ -322,6 +340,9 @@
         margin-left: 2.264vw;
     }
 
+
+
+
     .nem-quick-desc { 
         display: flex;
         flex-direction: row;
@@ -414,6 +435,65 @@
 
 
 
+    .sideview-nem-showcase { 
+        margin-top: 6.319vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .sideview-nem-showcase img{ 
+        width: 99vw;
+    }
+    .sideview-nem-showcase .customize-cont { 
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        background-color: #0073E6;
+        align-self: flex-end;
+        margin-top: 28.056vw;
+        width: 17.917vw;
+        height: 4.513vw;
+    }
+    #customize-button { 
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        width: fit-content;
+    }
+ 
+    #customize-button p { 
+        margin:0;
+        margin-left: 1.319vw;
+        line-height:normal;
+        font-size: 2.5rem;
+        width: fit-content;
+    }
+    #customize-button .rfa {
+        height: 2.394vw;
+        width: 1.449vw;
+    }
+
+    .nem-name { 
+        width: 25.208vw;
+        height: 2.778vw;
+        background-color: #003B76;
+        display: flex;
+        position: absolute;
+        align-self: flex-start;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .nem-name p { 
+        margin: 0;
+        color: white;
+        font-size: 1.875rem;
+    }
+    
+
+
 
 
     footer { 
@@ -423,8 +503,7 @@
         width: fit-content;
         margin-top: 9%;
         display: flex;
-        justify-content: flex-start; /*yeah, i know its not what it looks like in the 
-        figma but this could be better because i see dead space in the figma*/
+        justify-content: flex-start; 
         margin-left: 8vw;
 
     }
@@ -498,7 +577,6 @@
         height: 5vw;
 
     }
-
 
 
 
