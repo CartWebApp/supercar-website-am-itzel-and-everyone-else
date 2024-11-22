@@ -7,98 +7,127 @@
 </head>
 <body>
     <!-- menu / Nav bar goes here -->
+    <header>
+        <nav role="navigation" class="topnav">
+            <ul class="topnav-left">
+                <li  id="nav-ham-menu"><img src="images/all/ham-menu.png"></li>
+                <li  id="nav-menu">MENU</li>
+            </ul>
+
+            <ul class="topnav-mid">
+                <li  id="nav-tri-icon"><img src="images/all/icon.png" href="index.html"></li>
+            </ul>
+
+            <ul class="topnav-right">
+                <li  id="nav-mag-glass"><img src="images/all/mag-glass.png"></li> 
+                <li  id="nav-profile"><img src="images/all/profile.png"></li>
+            </ul>
+           
+        </nav>
+    </header>
+    <!-- end nav bar -->
+<div class="container">
+     <!-- 5 car images here and zoom in :/ -->
+     <div class="dets-on-car">
+        <!-- Main Hero Image -->
+        <div class="hero-cont">
+            <img src="images/imgdump/galleryimgs/inside.jpg" alt="Car Interior" class="hero-img">
+            <img src="images/all/zoom-in.png" alt="Zoom In Icon" class="zoom-in">
+        </div>
+        <!-- Gallery Thumbnails -->
+        <div class="four-imgs">
+            <img src="images/imgdump/galleryimgs/wide-full-angle-black.png" alt="Wide Full Angle">
+            <img src="images/imgdump/galleryimgs/front-angle-black.png" alt="Front Angle">
+            <img src="images/imgdump/galleryimgs/back-corner-side-black.png" alt="Back Corner Side">
+            <img src="images/imgdump/galleryimgs/back-angle-black.png" alt="Back Angle">
+        </div>
+    </div>
+    
 
     <!-- start for the colors on the right side -->
     <div class="right-side">
         <h2>Interior</h2>
         <h3>Seat Color</h3>
         <div class="top-container">
-
-            <!-- this is the first two containers -->
+    
+            <!-- Seat Color Checkboxes -->
             <div class="one">
                 <div class="black-ops">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat1" class="seat-checkbox">
                     <p>Black Ops</p>
                 </div>
-
                 <div class="carnelian">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat2" class="seat-checkbox">
                     <p>Carnelian</p>
                 </div>
             </div>
-
-            <!-- 2 -->
             <div class="one">
                 <div class="alabaster">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat3" class="seat-checkbox">
                     <p>Alabaster</p>
                 </div>
-
                 <div class="coquelicot">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat4" class="seat-checkbox">
                     <p>Coquelicot</p>
                 </div>
             </div>
-
-            <!-- 3 -->
             <div class="one">
                 <div class="pumice">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat5" class="seat-checkbox">
                     <p>Pumice</p>
                 </div>
-
                 <div class="persian-indigo">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="seat6" class="seat-checkbox">
                     <p>Persian Indigo</p>
                 </div>
             </div>
         </div>
-
-        <!-- break -->
+    
         <h3>Stitching Color</h3>
         <div class="mid-container">
-
-            <!-- this is the first two containers -->
+    
+            <!-- Stitching Color Checkboxes -->
             <div class="one">
                 <div class="black-ops">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch1" class="stitching-checkbox">
                     <p>Black Ops</p>
                 </div>
-
                 <div class="carnelian">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch2" class="stitching-checkbox">
                     <p>Carnelian</p>
                 </div>
             </div>
-
-            <!-- 2 -->
             <div class="one">
                 <div class="alabaster">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch3" class="stitching-checkbox">
                     <p>Alabaster</p>
                 </div>
-
                 <div class="coquelicot">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch4" class="stitching-checkbox">
                     <p>Coquelicot</p>
                 </div>
             </div>
-
-            <!-- 3 -->
             <div class="one">
                 <div class="pumice">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch5" class="stitching-checkbox">
                     <p>Pumice</p>
                 </div>
-
                 <div class="persian-indigo">
-                    <input type="checkbox" id="box1">
+                    <input type="checkbox" id="stitch6" class="stitching-checkbox">
                     <p>Persian Indigo</p>
                 </div>
             </div>
         </div>
-     </div>
-    </section>
+    </div>
+
+   </div>
+
+
+
+
+
+    </div>
+
 
 
 
@@ -115,15 +144,79 @@
                 padding: 0;
                 margin: 0;
             }
+            /* nav bar here */
+            header {
+                display: flex;
+                flex-direction: column;
+                width: 100vw;
+            }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        height: 6.944vw;
+        background: linear-gradient(to bottom,#050133, rgba(0,0,0,0.1));
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 33.33%;
+        height: 80%;
+        justify-content: center;;
+        align-items: center;
+        list-style-type: none;
+    }
+    .topnav ul li img {
+        height: 6vw;
+        margin-bottom: 0;
+    }
+
+    #nav-menu { 
+        margin-left: 1.550vw;
+        margin-bottom: 0;
+    }
+    #nav-ham-menu img{
+        height: 3.125vw;
+    }
+    #nav-mag-glass img {
+        height: 3.333vw;
+        margin-right: 2.5vw;
+    }
+    #nav-profile img {
+        height: 4.306vw;
+    }
+
+    .topnav-left {
+        justify-content: flex-start;
+        align-items:center; 
+        padding-left: 1.744vw;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+    }
+
+    .topnav-right { 
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1.744vw;
+    }
+    /* end nav bar here */
             body{
                 background-color: #050133;
                 color: white;
                 margin-bottom: 3000px;
             }
+            .container{
+                display: flex; 
+                /* SAVE THIS FOR LATER!!!!!! */
+            }
             .right-side{
-                margin-left: 10px; /*targets the overall container*/
+                justify-self: flex-end; /*targets the overall container*/
                 width: 33.3333vw;
-                height: 80.763888888vw;
+                height: 85vw;
                 background-color: #003B76;
             }
 
@@ -177,7 +270,8 @@
 
             input[type="checkbox"]:checked {
                 /* background-color: #00000058; Change color when checked */
-                border: double white 2px;
+                /* border: double white 2px;   How about we leave this out...? i
+                 mean it dosent really go well with the white */
             }
             .black-ops, .carnelian, .alabaster, .coquelicot, .pumice, .persian-indigo{
                 /* margin-right: 10px; */
@@ -211,7 +305,194 @@
                 margin-top: 1vw;
                 margin-bottom: 2vw;
             }
+            /* Greyed-out effect for the color boxes */
+            .greyed-out {
+                background-color: lightgrey; /* Grey out the color container */
+                opacity: 0.5;               /* Slightly dim it */
+                pointer-events: none;       /* Prevent interaction */
+            }
+            .black-ops, .carnelian, .alabaster, .coquelicot, .pumice, .persian-indigo {
+                transition: opacity 0.3s ease;
+            }
+
+            .black-ops p, .carnelian p, .alabaster p, .coquelicot p, .pumice p, .persian-indigo p {
+                transition: text-decoration 0.3s ease;
+            }
+
+
+
+
+
+            /* lets talk about the 5 images */
+
+           /* Container for the Hero Image */
+.hero-cont {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    overflow: hidden; /* Ensures any overflow is clipped */
+}
+
+/* Hero Image Styling */
+.hero-img {
+    width: auto;
+    height: 100%; /* Ensure full height */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Zoom Icon */
+.zoom-in {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Gallery Thumbnails Container */
+.four-imgs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 100px; /* Set a consistent thumbnail height */
+}
+
+/* Thumbnails */
+.four-imgs img {
+    width: auto; /* Maintain aspect ratio */
+    height: 100%; /* Match the fixed height */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Hover Effect */
+.four-imgs img:hover {
+    border-color: #007bff; /* Highlight color */
+}
+
+
+
+
+
+
             
             </style>
+            <script>
+                // Function to handle checkbox toggling
+
+
+// this is a good option//
+
+// document.querySelectorAll('.top-container, .mid-container').forEach(container => {
+//     container.addEventListener('change', (event) => {
+//         const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+        
+//         checkboxes.forEach(checkbox => {
+//             const parentDiv = checkbox.parentElement;
+//             if (checkbox !== event.target) {
+//                 checkbox.checked = false; // Uncheck all other checkboxes
+//                 parentDiv.style.opacity = '0.5'; // Dim their appearance
+//             } else {
+//                 parentDiv.style.opacity = '1'; // Highlight the selected checkbox
+//             }
+//         });
+//     });
+// });
+// this is a good option//
+
+
+
+
+
+
+
+// THE SECOND ONE LOL
+
+// document.querySelectorAll('.top-container, .mid-container').forEach(container => {
+//     container.addEventListener('change', (event) => {
+//         const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+
+//         if (event.target.checked) {
+//             // Disable all other checkboxes and grey them out
+//             checkboxes.forEach(checkbox => {
+//                 const parentDiv = checkbox.parentElement;
+//                 if (checkbox !== event.target) {
+//                     checkbox.disabled = true; // Disable the checkbox
+//                     parentDiv.style.opacity = '0.5'; // Dim the appearance
+//                 } else {
+//                     parentDiv.style.opacity = '1'; // Highlight the selected one
+//                 }
+//             });
+//         } else {
+//             // Re-enable all checkboxes and restore their appearance
+//             checkboxes.forEach(checkbox => {
+//                 const parentDiv = checkbox.parentElement;
+//                 checkbox.disabled = false; // Enable the checkbox
+//                 parentDiv.style.opacity = '1'; // Restore full opacity
+//             });
+//         }
+//     });
+// });
+
+
+
+
+
+
+
+document.querySelectorAll('.top-container, .mid-container').forEach(container => {
+    container.addEventListener('change', (event) => {
+        const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+
+        if (event.target.checked) {
+            // Disable all other checkboxes and grey them out
+            checkboxes.forEach(checkbox => {
+                const parentDiv = checkbox.parentElement;
+                const textElement = parentDiv.querySelector('p'); // Select the text element
+                
+                if (checkbox !== event.target) {
+                    checkbox.disabled = true; // Disable the checkbox
+                    parentDiv.style.opacity = '0.5'; // Dim the appearance
+                    textElement.style.textDecoration = 'line-through'; // Add a line through the text
+                } else {
+                    parentDiv.style.opacity = '1'; // Highlight the selected one
+                    textElement.style.textDecoration = 'none'; // Ensure no line-through for selected
+                }
+            });
+        } else {
+            // Re-enable all checkboxes and restore their appearance
+            checkboxes.forEach(checkbox => {
+                const parentDiv = checkbox.parentElement;
+                const textElement = parentDiv.querySelector('p'); // Select the text element
+                
+                checkbox.disabled = false; // Enable the checkbox
+                parentDiv.style.opacity = '1'; // Restore full opacity
+                textElement.style.textDecoration = 'none'; // Remove line-through
+            });
+        }
+    });
+});
+
+
+
+// javascript that makes it to when you click on an image, it will show up
+document.querySelectorAll('.four-imgs img').forEach(img => {
+    img.addEventListener('click', function () {
+        const newSrc = this.getAttribute('src');
+        document.querySelector('.hero-img').setAttribute('src', newSrc);
+    });
+});
+
+
+
+
+
+
+
+
+
+            </script>
 </body>
 </html>
