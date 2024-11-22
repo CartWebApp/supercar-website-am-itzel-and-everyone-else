@@ -9,15 +9,15 @@
     <div class="v-top">
         <div class="top-left">
             <img src="images/imgdump/galleryimgs/wide-full-angle-black.png">
-            <h2>Nemesis RR</h2>
+            <h2 class="nemesis-rr">Nemesis RR</h2>
             <p>$1,604,470.00</p>
         </div>
         <div class="top-right">
-            <h2>Opening Hours</h2>
+            <h2 class="opening-hours">Opening Hours</h2>
 
             <div class="opening-hours-cont">
                 
-                <div class="dates">
+                <div class="dates"> <!--change later pluh-->
                     <p>Sunday</p>
                     <p>Monday</p>
                     <p>Tuesday</p>
@@ -48,13 +48,14 @@
      <div class="the-rest">
         <h2>Arrange a Callback</h2>
         <div class="four-boxes">
-            <div class="box1 boxs"><h3>ASAP</h3></div>
-            <div class="box2 boxs"><p>11/18/24</p><h3>ASAP</h3></div>
-            <div class="box3 boxs"><p>11/18/24</p><h3>ASAP</h3></div>
-            <div class="box4 boxs"><p>11/18/24</p><h3>ASAP</h3></div>
+            <div class="box1 box"><h3>ASAP</h3></div>
+            <div class="box2 box"><p>11/18/24</p><h3>ASAP</h3></div>
+            <div class="box3 box"><p>11/18/24</p><h3>ASAP</h3></div>
+            <div class="box4 box"><p>11/18/24</p><h3>ASAP</h3></div>
         </div>
         <p class="text">Please be aware that callbacks are only available on weekdays during our business hours. Upon selecting a date, you will receive an email confirmation of the appointment or an alternative suggestion.</p>
         <h2 class="header">Your Inquiry to Trion Fresno</h2> 
+    </div>
 </body>
 
 
@@ -81,7 +82,7 @@
         background: #003B76;
         display: flex;
         width: 87.916vw;
-        height: 33.33;
+        height: 33.33vw;
 
     }
     
@@ -93,34 +94,86 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
-        justify-content: center;
-        align-items: center;
-
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-left: 2.36em;
         background-color: black;
+    }
+    .v-top .nemesis-rr{
+        margin-top: 1.8vw;
+        margin-bottom: 1.25vw;
+    }
+    .v-top .opening-hours{
+        margin-bottom: .83vw;
+        
     }
     h2{
         font-size: 2em;
         margin-top: 1vw;
+        font-weight: 600;
     }
     p{
         font-size: 1.5em;
+        font-weight: 300;
+    }
+
+    .dates, .time{
+        font-size: 1.5rem;
     }
     /* yeah so ima have to give up here because im on a call with David and im not gettign any work done lol */
     .the-rest{
         background-color: #003B76;
+        width: 87.916vw;
+        height: 146.527vw;
+        justify-self: center;
+        
+        
+    }
+    
+    .the-rest h2{
+        font-size: 4em;
+        margin-left: 9.444vw;
     }
     .four-boxes{
         display: flex;
         justify-content: space-around;
     }
-    .boxs{
+    .box{
         background-color: white;
         color: blue;
         width: 19.09vw;
         height: 10.76vw;
+        justify-items: center;
+        align-content: center;
+        
     }
-
-
+.box h3{
+    font-size: 2em;
+    font-weight: 600;
+}
+.box{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.box2, .box3, .box4{
+    background-color: white;
+    /* i tried centering things here... and making it work with the 
+    gap but it dident work... this is now just care for the heck of it */
+    /* align-items: center; */
+    /* background-color: black; */
+    /* gap: 100px; */
+}
+/* .the-rest h2{
+    width: 76.69vw;
+} */
+.text{
+    font-size: 2em;
+    justify-self: center;
+    /* background-color: black; */
+    width: 76.69vw;
+    margin-top: 2.63888vw;
+    font-weight: 300;
+}
 
     
     
