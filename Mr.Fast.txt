@@ -1,0 +1,3 @@
+the footer and header are in:
+index.html
+footer.html
