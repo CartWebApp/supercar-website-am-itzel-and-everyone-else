@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nemesis Finalize</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <!-- above is for the phone number to work -->
+  <link rel="icon" href="images/all/icon.png">
 </head>
 <body>
     <div class="v-top">
@@ -55,7 +61,53 @@
         </div>
         <p class="text">Please be aware that callbacks are only available on weekdays during our business hours. Upon selecting a date, you will receive an email confirmation of the appointment or an alternative suggestion.</p>
         <h2 class="header">Your Inquiry to Trion Fresno</h2> 
+    
+    <div class="your-message">
+        <p>Your Message</p>
+        <textarea class="no-resize" placeholder="Dear Trion Center, I am interested in this car."></textarea>
     </div>
+    <div class="your-contact-info">
+        <h2>Your Contact Details</h2>
+        <div class="st2">
+            <select class="dropdown base">
+                <option value="" disabled selected>Title</option>
+                <option value="Manager">Manager</option>
+                <option value="Director">Director</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Engineer">Baka Boi</option>
+            </select>
+
+            <select class="dropdown base">
+                <option value="" disabled selected>Title</option>
+                <option value="Manager">Manager</option>
+                <option value="Director">Director</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Engineer">Baka Boi</option>
+            </select>
+        </div>
+        <!-- first name last name input text -->
+        <div class="two-halves">
+            <textarea class="half base" placeholder="First Name"></textarea>
+            <textarea class="half base" placeholder="Last Name"></textarea>
+        </div>
+        <!-- asking for email adress -->
+        <textarea class="full base" placeholder="Email"></textarea>
+
+
+
+        <!-- phone number below -->
+        <div class="phone-container">
+            <input id="phone" type="tel" placeholder="Mobile Number">
+          </div>
+          <!-- end phone number -->
+           <div class="lower-area">
+            <h2>Privacy Notice</h2>
+            <p>Effective Date: [10/2024]</p>
+            <p>1. Information We Collect</p>
+            <p>Since Trion is currently in the concept phase and not yet selling vehicles or collecting customer information, the only data we collect is limited to information that you voluntarily <a href="https://www.youtube.com/watch?v=Jt2yNZdOHxQ">Read More</a></p>
+            <div class="bot-box">
+                <h3>Send Non-binding Inquiry to Trion ></h3>
+           </div>
 </body>
 
 
@@ -88,7 +140,7 @@
     
     .opening-hours-cont{
         display: flex;
-        gap: 15vw;
+        gap: 13.47vw;
     }
     .top-right{
         display: flex;
@@ -97,7 +149,7 @@
         /* justify-content: center; */
         /* align-items: center; */
         margin-left: 2.36em;
-        background-color: black;
+        /* background-color: black; */
     }
     .v-top .nemesis-rr{
         margin-top: 1.8vw;
@@ -116,9 +168,18 @@
         font-size: 1.5em;
         font-weight: 300;
     }
-
+    
     .dates, .time{
         font-size: 1.5rem;
+        /* line-height: 6.69vw; */
+        margin-top: .69vw;
+        margin-bottom: .69vw;
+    }
+    .time{
+        margin-right: 03.888888888vw;
+    }
+    .dates, .opening-hours{
+        margin-left: 02.361111111vw;
     }
     /* yeah so ima have to give up here because im on a call with David and im not gettign any work done lol */
     .the-rest{
@@ -175,10 +236,118 @@
     font-weight: 300;
 }
 
-    
+
+
+
+.no-resize {
+  resize: none; /*Disables resizing*/
+  height: 22.91vw; /* Optional: Set width */
+  /* height: 150px; Optional: Set height */
+  width: 80.694444444vw;
+  font-size: 1.5em;
+  /* margin-top: 01.25vw; */
+  /* XXXXXX here im trying to get the text to have padding of some sort, that way it dosent look squished */
+  /* margin-left: 01.25vw; */
+
+}
+.base{
+    resize: none;
+    height: 04.8611vw;
+
+    /* keep in mind this is ONLY USED FOR TEXTING, i dont plan on keeping it here */
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 2em;
+}
+.dropdown {
+    /* height: 04.8611vw; */
+    width: 22.2222vw;
+    /* gap: 100px; */
+    /* font-size: 2em; */
+}
+.st2{
+    gap: 100px;
+    /* wierd idk why i cant get that damn gap there :/ */
+}
+.half{
+    /* height: 04.8611vw; */
+    /* resize: none; */
+    width: 40.555vw;
+    /* font-size: 2em; */
+}
+.full{
+    width: 100%;
+    /* fix this acordinelly :/ */
+}
+
+    /* phone number below */
+
+
+    .phone-container {
+      width: 100%;
+      /* max-width: 400px; */
+      /* text-align: center; */
+      color: black;
+    }
+
+    #phone {
+        /* color: black; */
+      width: 100%;
+      /* padding: 10px; */
+      font-size: 1.5em;
+      /* border: 1px solid #ccc; */
+      /* border-radius: 5px; */
+      outline: none;
+    }
+
+    #phone:focus {
+      border-color: #0078d7;
+      /* targets the border thing */
+    }
+    a{
+        color: white;
+    }
+    .bot-box {
+        background-color: #0073E6; /* Blue background */
+        height: 4.513888888vw;
+        width: 44.44vw;
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Horizontal centering */
+        align-items: center; /* Vertical centering */
+        text-align: center; /* Ensures proper text alignment */
+        justify-self: center;
+        font-size: 2em;
+    }
+
     
     
     
     </style>
+
+
+<!-- below is the js for the phone number to work -->
+
+
+    <!-- Include intl-tel-input JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+  <script>
+    const phoneInputField = document.getElementById("phone");
+    const iti = window.intlTelInput(phoneInputField, {
+      initialCountry: "us", // Default country
+      separateDialCode: true, // Show dial code separately
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js", // Validation script
+    });
+
+    // Optional: Log selected country and dial code (debugging)
+    phoneInputField.addEventListener("countrychange", function () {
+      const countryData = iti.getSelectedCountryData();
+      console.log("Selected country:", countryData.name);
+      console.log("Dial code:", countryData.dialCode);
+    });
+
+
+    // phone number here chief
+  </script>
 </html>
 
