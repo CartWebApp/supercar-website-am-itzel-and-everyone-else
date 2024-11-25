@@ -7,7 +7,36 @@
     <title>Document</title>
  </head>
  <body>
-    
+    <div class="outside">
+        <img src="images/imgdump/galleryimgs/account login bg.png" class="hero-img">
+        <div class="container">
+
+            <div class="top">
+                <img src="images/all/icon.png">
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <h2>Welcome!</h2>
+                    <h3>Log in with your Trion ID </h3>
+                </div>
+
+                <div class="right">
+                    <div class="right-top ">
+                        <p>Please enter your Trion ID Code</p>
+                        <textarea class="text-here height width" placeholder="Trion ID"></textarea>
+                        <h2 class="height">Log In ></h2>
+                    </div>
+
+                    <div class="right-bot">
+                        <p>Don't have a Trion ID? <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvocaloid.fandom.com%2Fwiki%2FHatsune_Miku&psig=AOvVaw0PAX-hswMeEjYPwrE2y7rV&ust=1732602762886000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKj9mbTu9okDFQAAAAAdAAAAABAE">Sign Up</a></p>
+                        <hr class="width">
+                        <p>Log In Without Pasward</p>
+                        <h2 class="you-got-mail height width"><img src="images/imgdump/galleryimgs/you got mail.png"> Log In With Email </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
  </body>
 
 <style>
@@ -20,8 +49,110 @@
         }
     body{
         background-color: #050133;
+        color: white;
+        /* height: 6000px; */
+    }
+    .outside{
+        position: relative;
+        display: inline-block;
+    }
+    .hero-img{
+        width: 100vw; /*only side scroll because of the up and down scroll*/
+        display: block;
+    }
+    .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    background-color: #003B76;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    max-height: 36vw;
+}
+
+    .top img{
+        margin-top: .9vw;
+        height: 7.01388vw;
+        display: flex;
+        justify-self: center;
+        /* background-color: black; */
+        
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .left{
+        margin-left: 2.77vw;
+    }
+    
+    .left h2{
+        font-size: 4em;
+    }
+    .left h3{
+      font-size: 2em;  
     }
 
+.right{
+    width: 26vw;
+    /* background-color: hsla(0, 0%, 100%, 0.38); */
+}
+.right-top p:nth-child(1){
+    margin-bottom: 1.18vw;
+}
+.right-top p{
+    font-size: 1.5em;
+    /* background-color: black; */
+}
+.right-top .text-here{
+    /* background-color: black; */
+    resize: none;
+    
+    font-size: 2em;
+
+}
+.right-top h2{
+    /* background-color: black; */
+    background-color: #0073E6;
+    font-size: 2em;
+    text-align: left;
+    /* justify-content: center; */
+    width: 50%;
+    margin-top: 1.18vw;
+}
+.right-bot p{
+font-size: 1.5em;
+margin-top: 1.18vw;
+    margin-bottom: 1.18vw;
+}
+a{
+    color: white;
+}
+hr{
+    /* heres the ting... idk if i should make it largr or not so ima just leave this here */
+}
+.you-got-mail{
+    /* background-color: black; */
+    display: flex;
+    border: #0073E6 3px solid;
+    align-items: center;
+    margin-bottom: 3.125vw;
+}
+.you-got-mail img{
+    margin-right: 1.6em;
+    margin-left: .9em;
+    /* border: green 4px solid; */
+    /* height: 50px; */
+}
+.height{
+    height: 4.5138888vw;
+}
+.width{
+    width: 24vw;
+}
 </style>
     
  </html>
