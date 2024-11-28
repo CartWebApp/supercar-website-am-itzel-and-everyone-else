@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="icon" href="images/all/icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/universal.css">
 </head>
 <body>
     <header>
@@ -23,7 +24,6 @@
                 <li  id="nav-mag-glass"><img src="images/all/mag-glass.png"></li> 
                 <li  id="nav-profile"><img src="images/all/profile.png"></li>
             </ul>
-           
         </nav>
     </header>
 
@@ -53,11 +53,10 @@
 
 
 
-    <div class="nem-quick-desc">
+    <div class="car-quick-desc">
         <div class="overlayed-photos">
             <img src="images/home/close-front-left-black-cropped.png" id="overlayed-photo1">
             <img src="images/home/back-right-zoom-black-cropped.png" id="overlayed-photo2">
-            
         </div>
         <article>
             <h2>Nemesis RR</h2>
@@ -82,7 +81,7 @@
         </div>
     </div>
 
-    <div class="sideview-nem-showcase">
+    <div class="sideview-car-showcase">
         <img src="images/home/side-view-black-shadow.png">
         <div class="nem-name">
             <p>Nemesis RR</p>
@@ -94,15 +93,18 @@
             </a>
         </div>
     </div>
-    <div class="nem-quick-desc">
+
+
+
+
+    <div class="car-quick-desc">
         <div class="overlayed-photos">
-            <img src="images/home/close-front-left-black-cropped.png" id="overlayed-photo1">
-            <img src="images/home/back-right-zoom-black-cropped.png" id="overlayed-photo2">
-            
+            <img src="images/home/bw-side-17.png" id="overlayed-photo1">
+            <img src="images/home/bw-back-angle.png" id="overlayed-photo2">
         </div>
         <article>
-            <h2>Nemesis RR</h2>
-            <p>Every discerning customer craves something truly unique, and the Nemesis RR is designed to deliver just that. </p>
+            <h2>Black Widow</h2>
+            <p>More than a supercar, it's a bold statement of leadership in next-generation electric vehicles.</p>
             <a id="discovermore-button" class="herobuttons" href="#">
                 <p>Discover More</p>
                 <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
@@ -110,23 +112,10 @@
         </article>
     </div>
 
-    <div class="exclusivity-counter">
-        <div class="remaining">
-            <img src="images/home/remaining.png">
-        </div>
-        <article>
-            <h2>Exclusivity</h2>
-            <p>Each car is carefully hand-built in limited numbers and can be fully customized, offering an exclusive ownership experience tailored to your personal style.</p>
-        </article>
-        <div class="rightarrow">
-            <img src="images/home/arrow-right-exclusivity.png">
-        </div>
-    </div>
-
-    <div class="sideview-nem-showcase">
-        <img src="images/home/side-view-black-shadow.png">
-        <div class="nem-name">
-            <p>Nemesis RR</p>
+    <div class="sideview-car-showcase">
+        <img src="images/home/bw-front-angle.png">
+        <div class="bw-name">
+            <p>Black Widow</p>
         </div>
         <div class="customize-cont">
             <a id="customize-button" href="#">
@@ -137,6 +126,46 @@
     </div>
 
 
+    <div class="s-header">
+        <h2>Discover Trion Services</h2>
+    </div>
+    
+    <div class="s-card-cont">
+        <div class="s-card" id="s-card-1">
+            <article>
+                <img src="images/home/icons/insurance.png">
+                <h3>Insurance</h3>
+                <p>Our car insurance policy provides premium protection for your high-value vehicles.</p>
+                <a id="learnmore" href="#">
+                    <p>Learn More</p>
+                    <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
+                </a>
+            </article>
+        </div>
+        <div class="s-card" id="s-card-2">
+            <article>
+                <img src="images/home/icons/replacement.png">
+                <h3>Part Replacement</h3>
+                <p>Our part replacement policy guarantees authentic parts for maintaining your vehicle's performance.</p>
+                <a id="learnmore" href="#">
+                    <p>Learn More</p>
+                    <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
+                </a>
+            </article>
+        </div>
+        <div class="s-card" id="s-card-3">
+            <article>
+                <img src="images/home/icons/help.png">
+                <h3>Customer Help</h3>
+                <p>Our customer help policy ensures personalized support to address your needs promptly.</p>
+                <a id="learnmore" href="#">
+                    <p>Learn More</p>
+                    <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
+                </a>
+            </article>
+        </div>
+    </div>
+    
 
 
 
@@ -231,426 +260,3 @@
 
 </body>
 </html>
-<style>
-    body{
-        margin:0;
-        padding: 0;
-        background-color: #050133;
-        color: white;
-        width: 99vw;
-    }
-    header {
-        position: fixed;
-        margin:0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        width: 99vw;
-        z-index: 1;
-        top: 0;
-    }
-
-    .topnav {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        height: 6.944vw;
-        background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
-        justify-content: center;
-        align-items: center;
-        width: 99vw;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        width: 33.33%;
-        height: 80%;
-        justify-content: center;;
-        align-items: center;
-        list-style-type: none;
-    }
-    .topnav ul li img {
-        height: 6vw;
-        margin-bottom: 0;
-    }
-
-    .topnav ul li { 
-        display: flex;
-        align-items: center;
-    }
-
-    #nav-menu { 
-        margin-left: 1.550vw; 
-        margin-bottom: 0;
-        font-size: 2.75rem;
-    }
-    #nav-ham-menu { 
-        display: flex;
-        align-items: center;
-    }
-    #nav-ham-menu img{
-        height: 3.125vw;
-    }
-    #nav-mag-glass img {
-        height: 3.333vw;
-        margin-right: 2.5vw;
-    }
-    #nav-profile img {
-        height: 4.306vw;
-        margin-right: 0;
-    }
-
-    .topnav-left {
-        display: flex;
-        margin:0;
-        justify-content: flex-start;
-        align-items:center; 
-        padding-left: 1.744vw;
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-    }
-
-    .topnav-right { 
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 1.744vw;
-    }
-    .hero-img-stuff img{ 
-        width: 100%;
-    }
-    .hero-img { 
-        margin-top: 6.944vw;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .hero-img-textcontent {
-        margin-top: 16.667vw;
-        margin-left: 7.153vw;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        flex-wrap: wrap;
-        width: 35.189vw;
-    }
-    .hero-img-textcontent h1 { 
-        font-size: 4.9rem;
-        color: #0073E6;
-        margin: 0;
-    }
-    .hero-img-textcontent p {
-        font-weight: 500;
-        font-size: 2.5rem;
-        width: 27vw;
-        margin: 0;
-    }
-    .hero-button-cont { 
-        display: flex;
-        flex-direction: row;
-    }
-  
-    .herobuttons {  
-        font-weight: 600;
-        text-decoration: none;
-        color: white;   
-        
-        display: flex;
-        margin-top: 2.708vw;
-        align-items: center;
-        
-    }
-    .herobuttons p { 
-        margin-left: 1.319vw;
-        width: fit-content;
-        font-size: 40px;
-        font-weight: 600;
-    }
-
-    #build-button { 
-        margin-left:.972vw; 
-        background-color: #0073E6;
-        border-style: solid;
-        border-color:#0073E6;
-        width:11.944vw;
-        height: 4.513vw;
-    }
-    #discovermore-button { 
-        border-style: solid;
-        border-color:#0073E6;
-        width: 22.222vw;
-        height: 4.513vw;
-        
-    }
-    
-    .rfa { 
-        height: 2.393vw;
-        margin-left: 2.264vw;
-    }
-
-
-
-
-    .nem-quick-desc { 
-        display: flex;
-        flex-direction: row;
-        width: 99vw;
-        height: 36.875vw;
-    }
-    .overlayed-photos {
-        width: 45.625vw;
-        display: flex;
-
-    }
-
-    .overlayed-photos img { 
-        height: 21.597vw;
-        position: absolute;
-    }
-    #overlayed-photo1 { 
-        margin-top: 4.513vw;
-        margin-left: 5.972vw;
-        box-shadow: 0px 0px 4px black;
-    }
-    #overlayed-photo2 { 
-        margin-top: 15.278vw;
-        margin-left: 16.181vw;
-        box-shadow: 0px 0px 4px black;
-    }
-    .nem-quick-desc article { 
-        display: flex;
-        flex-direction: column;
-        width: 47.5vw;
-    }
-    .nem-quick-desc h2 { 
-        margin:0;
-        margin-top: 4.513vw;
-        font-size: 4.5rem;
-    }
-
-    .nem-quick-desc article > p {
-        font-size: 2.75rem;
-        width: 90%;
-        line-height: 4.625rem;
-    }
-    
-    .exclusivity-counter { 
-        width: 87.917vw;
-        height: 20.069vw;
-        display: flex;
-        flex-direction: row;
-        background-color: #003B76;
-        margin-left: 5.972vw;
-        margin-top: 5.763vw;
-    }
-    
-    .remaining { 
-        display: flex;
-        width: 22.083vw;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .remaining img {
-        width: 19.514vw;
-        height: 19.514vw;
-    }
-    .exclusivity-counter article { 
-        display: flex;
-        flex-direction: column;
-        margin-top: 1.111vw;
-        margin-left: 4.931vw;
-        width: 47.5vw;
-    }
-    .exclusivity-counter article h2 { 
-        font-size: 4.5rem;
-        margin: 0;
-        font-weight: 600;
-    }
-    .exclusivity-counter article p {
-        font-size:  2rem;
-        line-height: 3.813rem;
-        margin-top: 1.389vw;
-    }
-    .exclusivity-counter .rightarrow img { 
-        height: 11.528vw;
-        margin-left: 2.986vw;
-    }
-    .exclusivity-counter .rightarrow {
-        display: flex;
-        align-items: center;
-    }
-
-
-
-    .sideview-nem-showcase { 
-        margin-top: 6.319vw;
-        display: flex;
-        flex-direction: column;
-    }
-    .sideview-nem-showcase img{ 
-        width: 99vw;
-    }
-    .sideview-nem-showcase .customize-cont { 
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        background-color: #0073E6;
-        align-self: flex-end;
-        margin-top: 28.056vw;
-        width: 17.917vw;
-        height: 4.513vw;
-    }
-    #customize-button { 
-        display: flex;
-        flex-direction: row;
-        margin:0;
-        align-items: center;
-        color: white;
-        text-decoration: none;
-        width: fit-content;
-    }
- 
-    #customize-button p { 
-        margin:0;
-        margin-left: 1.319vw;
-        line-height:normal;
-        font-size: 2.5rem;
-        width: fit-content;
-    }
-    #customize-button .rfa {
-        height: 2.394vw;
-        width: 1.449vw;
-    }
-
-    .nem-name { 
-        width: 25.208vw;
-        height: 2.778vw;
-        background-color: #003B76;
-        display: flex;
-        position: absolute;
-        align-self: flex-start;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .nem-name p { 
-        margin: 0;
-        color: white;
-        font-size: 1.875rem;
-    }
-    
-
-
-
-
-    footer { 
-        background-color: #08006A;
-    }
-    footer .top{
-        width: fit-content;
-        margin-top: 9%;
-        display: flex;
-        justify-content: flex-start; 
-        margin-left: 8vw;
-
-    }
-    footer .middle{
-        width: fit-content;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 8vw;
-
-    }
-    
-    footer .bottom{
-        margin-top: 7.014vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-
-    }
-    .account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
-        width: 18vw;
-        text-overflow: none;
-
-    }
-
-    .social { 
-        align-self: flex-start;
-        width: 18vw;
-        text-overflow: none;
-    }
-    footer a{
-        margin-top: 10%;
-        font-size: 1.5rem;
-        color: white;
-        text-decoration: none;
-        /* font-size: 24px; */
-    }
-    footer a:hover { 
-        cursor: pointer;
-    }
-
-    footer .bot-deets{
-        font-size: .9em;
-    }
-    footer h2{
-        margin-top: 30%;
-        /* font-size: 32px; */
-        font-size: 2rem;
-    }
-    footer h3{
-        margin-top: 2%;
-    }
-
-    #instagram, #linkedin, #facebook { 
-        margin-top: 2vw;
-        height: 3vw;
-
-        
-    }
-    .icons { 
-        display: flex;
-        width: 70%;
-        justify-content: space-between;
-
-    }
-    .footermedia { 
-        display: flex;
-        flex-direction: column;
-    }
-    #footer-tri-icon { 
-        height: 5vw;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</style>
-
-<!-- Attributions -->
- <!-- menu by Rohith M S from <a href="https://thenounproject.com/browse/icons/term/menu/" target="_blank" title="menu Icons">Noun Project</a> (CC BY 3.0) -->
