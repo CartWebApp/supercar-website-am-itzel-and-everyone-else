@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" href="images/all/icon.png"></link>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation" class="topnav">
+            <ul class="topnav-left">
+                <li  id="nav-ham-menu"><img src="images/all/ham-menu.png"></li>
+                <li  id="nav-menu">MENU</li>
+            </ul>
+
+            <ul class="topnav-mid">
+                <li  id="nav-tri-icon"><img src="images/all/icon.png" href="index.html"></li>
+            </ul>
+
+            <ul class="topnav-right">
+                <li  id="nav-mag-glass"><img src="images/all/mag-glass.png"></li> 
+                <li  id="nav-profile"><img src="images/all/profile.png"></li>
+            </ul>
+        </nav>
+        <!-- what poopybut added here -->
+        <div class="ham-working">
+            <div class="lil-x">
+                <img src="images/all/x.png">
+            </div>
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Nemesis</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Black Widow</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Dealerships</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Services</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Merch</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>About us</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Settings</p>
+            </div>
+
+            <div class="selections">
+                <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow">
+                <p>Account</p>
+            </div>
+        </div>
+            
+            
+    </header>
+</body>
+
+<style>
+    body { 
+        margin: 0;
+        padding: 0;
+        height: 9999px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .topnav {
+        display: flex;
+        flex-direction: row;
+        height: 6.944vw;
+        background: linear-gradient(to bottom,#050133, rgba(0,0,0,0.1));
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        width: 33.33%;
+        height: 80%;
+        justify-content: center;;
+        align-items: center;
+        list-style-type: none;
+    }
+    .topnav ul li img {
+        height: 6vw;
+        margin-bottom: 0;
+    }
+
+    #nav-menu { 
+        margin-left: 1.550vw;
+        margin-bottom: 0;
+    }
+    #nav-ham-menu img{
+        height: 3.125vw;
+    }
+    #nav-mag-glass img {
+        height: 3.333vw;
+        margin-right: 2.5vw;
+    }
+    #nav-profile img {
+        height: 4.306vw;
+    }
+
+    .topnav-left {
+        justify-content: flex-start;
+        align-items:center; 
+        padding-left: 1.744vw;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+    }
+
+    .topnav-right { 
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 1.744vw;
+    }
+    /* poopybut added below */
+    .ham-working .lil-x img{
+        /* position: absolute; */
+        display: flex;
+        height: 2.1527vw;
+        background-color: black;
+        justify-self: flex-end;
+        margin-right: 1.527vw;
+        margin-top: 1.527vw;
+    }
+    .ham-working {
+    position: fixed; /* Ensures it overlays the page */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full viewport height */
+    width: 35.4166vw;
+    background-color: #918cca;
+    z-index: 1000; /* Keeps it above other content */
+    transform: translateX(-100%); /*Hides it off-screen initially*/
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+.ham-working.active {
+    transform: translateX(0); /* Brings it into view */
+}
+
+.ham-working .selections{
+   margin-left: 3.95833vw;
+}
+.selections{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 100px;
+    width: 17.5vw;
+    font-size: 2em;
+    margin-bottom: .55555vw;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ham-working .selections:first-child{
+    margin-top: 8.125vw;
+}
+.selections img{
+    height: 4.72vw;
+    margin-right: 1.597vw;
+
+    
+}
+.selections p{
+    font-size: 2em;
+}
+.lil-x img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamMenu = document.getElementById("nav-ham-menu"); // Hamburger menu button
+        const hamWorking = document.querySelector(".ham-working"); // The menu overlay
+        const closeButton = document.querySelector(".lil-x img"); // The "X" button
+
+        // Toggle the menu on hamburger click
+        hamMenu.addEventListener("click", () => {
+            hamWorking.classList.toggle("active"); // Toggles the 'active' class
+            updateAriaExpanded();
+        });
+
+        // Close the menu on "X" button click
+        closeButton.addEventListener("click", () => {
+            hamWorking.classList.remove("active");
+            updateAriaExpanded();
+        });
+
+        // Close the menu if clicking outside it
+        document.addEventListener("click", (e) => {
+            if (!hamWorking.contains(e.target) && !hamMenu.contains(e.target)) {
+                hamWorking.classList.remove("active");
+                updateAriaExpanded();
+            }
+        });
+
+        // Update aria-expanded for accessibility
+        function updateAriaExpanded() {
+            const isActive = hamWorking.classList.contains("active");
+            hamMenu.setAttribute("aria-expanded", isActive);
+        }
+    });
+</script>
+
+
+
+</html>
