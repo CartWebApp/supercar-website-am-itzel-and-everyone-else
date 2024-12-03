@@ -3,3 +3,26 @@ JEREMY CHANGE P'S TO "a" TAGS
 a crap ton of photoshop :/
 add functionality to a lot of things (everything, all i did was make it look alright)
 lock in
+
+Nemisis exterior and interior needs color CHANGE  
+    interior not using lower 4 images
+
+Customization review needs functionality
+    2 overlayed images... has to save the image 
+
+most likelly going to have to re-do the customizxation page
+
+progress bar on index needs to get working, lower left
+
+acessability guy
+
+phone number needs to be corrected (100vw)
+
+:psudo class everywhere
+
+
+remmeber javascript to *i choose black, displays black. * i choose red, displays red
+
+update contact info with hover
+
+come up with animation
