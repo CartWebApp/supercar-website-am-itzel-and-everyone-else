@@ -22,3 +22,7 @@ phone number needs to be corrected (100vw)
 
 
 remmeber javascript to *i choose black, displays black. * i choose red, displays red
+
+update contact info with hover
+
+come up with animation
