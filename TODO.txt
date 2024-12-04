@@ -20,6 +20,7 @@ phone number needs to be corrected (100vw)
 
 :psudo class everywhere
 
+that acessability feature where you can tab and it goes to the next thing
 
 remmeber javascript to *i choose black, displays black. * i choose red, displays red
 
