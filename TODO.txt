@@ -26,3 +26,5 @@ remmeber javascript to *i choose black, displays black. * i choose red, displays
 update contact info with hover
 
 come up with animation
+
+footer
