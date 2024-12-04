@@ -31,7 +31,7 @@
             <div class="lil-x">
                 <img src="images/all/x.png">
             </div> 
-            <a class="selections" href="#">
+            <a class="selections" href="#" id="nemesislink">
                 <img src="images/all/right-facing-arrow.png" alt="Right Facing Arrow" class="rfa">
                 <p>Nemesis</p>
             </a>
@@ -140,46 +140,60 @@
         align-items: center;
         padding-right: 1.744vw;
     }
+
+
+
+
+
+
     /* poopybut added below */
     .ham-working .lil-x img{
         /* position: absolute; */
         display: flex;
         height: 2.1527vw;
-        background-color: black;
         justify-self: flex-end;
         margin-right: 1.527vw;
         margin-top: 1.527vw;
     }
     .ham-working {
-    position: fixed; /* Ensures it overlays the page */
+    margin-top: 6.9444vw;
+    /* position: fixed; Ensures it overlays the page */
     top: 0;
     left: 0;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; /* Use full viewport height */
     width: 35.4166vw;
-    background-color: #918cca;
+    background-color: grey;
+    /* background-color: #050133; */
     z-index: 1000; /* Keeps it above other content */
-    transform: translateX(-100%); /*Hides it off-screen initially*/
+    transform: translateX(-100%); /* Hides it off-screen initially */
     transition: transform 0.3s ease-in-out; /* Smooth animation */
+    overflow-y: auto; /* Makes the menu scrollable */
 }
 
 .ham-working.active {
+    margin-top: 6.9444vw;
     transform: translateX(0); /* Brings it into view */
 }
 
 .ham-working .selections{
    margin-left: 3.95833vw;
 }
+
+
+
 .selections{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.452);
-    border-radius: 100px;
-    width: 20vw;
+    width: fit-content;
     font-size: 40px;
     margin-bottom: .55555vw;
     /* justify-content: center; */
     align-items: center;
     color: white;
     text-decoration: none;
+    margin-top: 1.2vw;
+}
+#nemesislink { 
+    margin-top: 3.63888vw;
 }
 .ham-working .selections:first-child{
     margin-top: 8.125vw;
@@ -187,15 +201,17 @@
 
 .selections p{
     font-size: 40px;
+    margin-left: 1.9444vw;
 }
+
 .lil-x img:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
 .selections img { 
-    width: 2.5vw;
-    height: 4.7222vw;
+    width: 1.52777vw;
+    height: 2.5vw;
 }
 
 </style>
