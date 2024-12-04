@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Knewave&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* ALL */
+
 * { 
     font-family: "Lexend Deca", sans-serif;
 }
 :root{
     --background-color: #08006A;
 }
+
+/* BODY */
+
 body{
     margin:0;
     padding: 0;
@@ -13,6 +18,9 @@ body{
     color: white;
     width: 99vw;
 }
+
+/* TOP NAVIGATION */
+
 header {
     position: fixed;
     margin:0;
@@ -94,6 +102,8 @@ header ul {
 }
 
 
+/* FOOTER */
+
 footer { 
     background-color: #08006A;
 }
@@ -121,7 +131,7 @@ footer .bottom{
 
 
 }
-.account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .about-us, .legal {
+.account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .footer-about-us, .legal {
     width: 18vw;
     text-overflow: none;
 
@@ -137,6 +147,7 @@ footer a{
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
+    width: fit-content;
     /* font-size: 24px; */
 }
 footer a:hover { 

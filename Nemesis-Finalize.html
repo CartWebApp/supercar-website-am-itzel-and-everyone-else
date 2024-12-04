@@ -62,7 +62,9 @@
 
     <div class="the-rest">
         
-        <h2 class="arrange-a-callback spacing-left">Arrange a Callback</h2>
+        <div class="restheader">
+            <h2 class="arrange-a-callback spacing-left">Arrange a Callback</h2>
+        </div>
         
         <div class="four-boxes spacing-left">
             <div class="box1 box"><h3>ASAP</h3></div>
@@ -97,7 +99,7 @@
                     <option value="Director">BAKA!!!</option>
                     <option value="Engineer">Engineer</option>
                     <option value="Engineer">No Title</option>
-                </select>
+                </select> 
             </div>
             
             <!-- first name last name input text -->
@@ -159,12 +161,12 @@
         display: flex;
         width: 87.916vw;
         height: 33.33vw;
-
+        margin-left: 6.0416vw;
     }
     
     .opening-hours-cont{
         display: flex;
-        gap: 13.47vw;
+
     }
     .top-right{
         display: flex;
@@ -192,15 +194,20 @@
         margin-left: 03.125vw;
     }
     h2{
-        font-size: 2em;
+        font-size: 40px;
+        margin:0;
         margin-top: 1vw;
         font-weight: 600;
+
     }
     p{
+        margin:0;
         font-size: 1.5em;
         font-weight: 300;
     }
-    
+    .opening-hours-cont p { 
+        margin-top: 0.694vw;
+    }
     .dates, .time{
         font-size: 1.5rem;
         /* line-height: 6.69vw; */
@@ -208,10 +215,11 @@
         margin-bottom: .69vw;
     }
     .time{
-        margin-right: 03.888888888vw;
+        margin-left: 10vw;
+        width: 18vw;
+
     }
     .dates /*, .opening-hours*/{
-        margin-left: 02.361111111vw;
     }
     /* yeah so ima have to give up here because im on a call with David and im not gettign any work done lol */
     .the-rest{
@@ -220,8 +228,7 @@
         height: 146.527vw;
         justify-self: center;
         margin-top: 10.347vw;
-        
-        
+        margin-left: 6.0416vw;
     }
     .spacing-left{
         margin-left: 03.6111vw;
@@ -265,12 +272,21 @@
 .inquiry{
     margin-bottom: 4.44vw;
 }
+.restheader { 
+    display: flex;
+    width: 100%;
+    height: 10.138vw;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
 .arrange-a-callback {
-    margin-top: 4.58vw; /* This will add the desired space at the top */
-    background-color: black;
+    font-size: 72px;
+    display: flex;
+ /* This will add the desired space at the top */
     /* Ensure there's no conflicting padding or margins */
     padding: 0; 
-    width: 100%; /* Ensuring full-width, if needed */
+    width: fit-content; /* Ensuring full-width, if needed */
 }
 
 .text{
@@ -371,18 +387,19 @@
     .phone-container {
         /* display: flex;
         flex-grow: 1; */
-      width: 100%;
+      width: 80.6944vw;
       /* max-width: 400px; */
       /* text-align: center; */
       color: black;
+      background-color: grey;
     }
 
     #phone {
         
         /* color: black; */
-      width: 100%;
       /* padding: 10px; */
       font-size: 1.5em;
+      width: 80.6944vw;
       /* border: 1px solid #ccc; */
       /* border-radius: 5px; */
       outline: none;
