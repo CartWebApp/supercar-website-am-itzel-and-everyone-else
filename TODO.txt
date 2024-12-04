@@ -27,4 +27,11 @@ update contact info with hover
 
 come up with animation
 
-footer
+font weight on everything
+
+taklk with design on mobil consistnacy 
+
+
+clean up code... like comments
+
+optomize images
