@@ -276,8 +276,10 @@ width: 23.055vw;
 }
 
 .colorsmh {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     display: flex;
-    gap: .41vw;
+    gap: .9vw;
 }
 
 /* Hide the default radio buttons */
