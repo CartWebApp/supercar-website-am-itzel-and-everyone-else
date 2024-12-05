@@ -10,22 +10,7 @@
 </head>
 <body>
     <div class="overall">
-        <div class="car-container">
-            <div class="hero-container">
-                <div class="hero-car">
-                    <img src="images/imgdump/galleryimgs/inside.jpg" alt="Car Interior">
-                    <div class="zoom-in">
-                        <img src="images/all/zoom-in.png" alt="Zoom In Icon">
-                    </div>
-                </div>
-            </div>
-            <div class="four-imgs">
-                <img src="images/imgdump/galleryimgs/wide-full-angle-black.png" alt="Wide Full Angle">
-                <img src="images/imgdump/galleryimgs/front-angle-black.png" alt="Front Angle">
-                <img src="images/imgdump/galleryimgs/back-corner-side-black.png" alt="Back Corner Side">
-                <img src="images/imgdump/galleryimgs/back-angle-black.png" alt="Back Angle">
-            </div>
-        </div>
+        
         <aside>
             <!-- Existing content -->
             <h2>Exterior</h2>
@@ -115,56 +100,11 @@
             overflow-y: auto; /* Allow vertical scrolling */
         }
     
-        /* Fixed Car Container */
-        .car-container {
-            width: 52.77vw; /* Fixed total width for the car section */
-            position: fixed; /* Keeps it fixed on the left side */
-            left: 0;
-        }
-    
-        /* Hero Section */
-        .hero-container {
-            width: 100%; /* Full width of the car container */
-            position: relative; /* Make it a positioning context */
-        }
-    
-        .hero-car img {
-            width: 100%; /* Ensure the hero image fills the container */
-        }
-    
-        /* Zoom-In Icon (Lower Right) */
-        .zoom-in {
-            position: absolute; /* Positioned relative to the hero-container */
-            bottom: 10px; /* Move 10px above the bottom of the container */
-            right: 10px; /* Move 10px from the right edge of the container */
-            width: 50px; /* Adjust the size of the zoom-in icon */
-        }
-    
-        .zoom-in img {
-            width: 100%; /* Make the icon fill its container */
-        }
-    
-        /* Four Images Section */
-        .four-imgs {
-            display: flex;
-            justify-content: space-between; /* Equal spacing between images */
-            width: 100%; /* Keep total width the same as the car container */
-            margin-top: 20px;
-        }
-    
-        .four-imgs img {
-            width: 23%; /* Slightly less than 25% to allow spacing */
-            transition: transform 0.3s ease; /* Smooth hover transition */
-            transform-origin: center;
-        }
-    
-        .four-imgs img:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
-        }
+        
     
         /* "Exterior" Section */
         aside {
-    margin-left: 52.77vw;
+    /* margin-left: 52.77vw; */
     padding: 20px;
     flex: 1;
     width: 33.33vw;
@@ -226,17 +166,15 @@
 
 
 
-        .six-color-options1,
-        .six-color-options2{
-            /* display: flex; */
-            background-color: blue;
-            justify-self: center;
-            /* display: none; */
-        }
-        #red:checked ~ .six-color-options1{
-            background-color: black;
-            display: block;
-        }
+.six-color-options1,
+.six-color-options2 {
+    display: none; /* Initially hidden */
+}
+#red:checked ~ .six-color-options1,
+#red2:checked ~ .six-color-options2 {
+    display: block; /* Make the color options visible */
+}
+
 
         .two-colors{
             display: flex;
@@ -283,6 +221,11 @@
             /* width: 300px; */
             display: none;
             /* border-radius: 10px; */
+        }
+
+        #red:checked ~ .hidden-content,
+        #red2:checked ~ .hidden-content {
+            display: block;
         }
     </style>
 </body>
