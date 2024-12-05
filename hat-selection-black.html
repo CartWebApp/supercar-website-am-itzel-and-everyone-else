@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="left">
+            <img src="merch/hat/large-black-hat.png" alt="Tion hat"> 
+        </aside>
+        <aside class="right">
+            <div class="top-text">
+                <h4>Acessopre</h4>
+                <h3>trucker cap</h3>
+                <h4>#15.00</h4>
+                <h4>color: <strong>black</strong></h4>
+            </div>
+            <div class="four-imgs">
+                <img src="merch/hat/small-black-hat.png" alt="small black hat">
+                <img src="merch/hat/small-black-hat.png" alt="small black hat">
+                <img src="merch/hat/small-black-hat.png" alt="small black hat">
+                <img src="merch/hat/small-black-hat.png" alt="small black hat">
+            </div>
+            <div class="size">
+                <h3>size: <strong>one size fits all</strong></h3>
+                <a href="#">size guide</a>
+            </div>
+            <div class="cart">
+                <a href="#">att to card</a>
+            </div>
+        </aside>
+    </div>
+    
+</body>
+<style>
+    body{
+        color: white;
+    }
+    .container{
+        margin-top: 5.9vw; /* could change if you want */
+        display: flex;
+        justify-content: space-around;
+    }
+    .container img{
+        width: 52.22vw;
+    }
+    .right .top-text{
+        background-color: aqua;
+        width: 35.625vw;
+    }
+    .right .top-text h4{
+        font-size: 1.5em;
+    }
+    .right .top-text h3{
+        font-size: 2em;
+        margin-top: 2.0138vw;
+    }
+    .right .top-text :nth-child(4){
+        background-color: black;
+        margin-top: 2.0138vw;
+    }
+    .right .top-text strong{
+        font-weight: 900;
+        /* color: black; */
+    }
+
+    /* four imgs here */
+    .four-imgs{
+        display: flex;
+        width: 35.625vw;
+        justify-content: space-between;
+    }
+    .four-imgs img{
+        width: 7.708vw;
+    }
+
+    /* sizing here */
+    .size{
+        display: flex;
+        justify-content: space-between;
+    }
+    .size strong{
+        font-weight: 100;
+    }
+    .size a{
+        color: white;
+    }
+    .cart a{
+        margin-top: 2.847vw;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+        color: white;
+        text-decoration: none;
+        border: #0073E6 2px solid;
+        transition: all 0.5s;
+    }
+    .cart a:hover{
+        transform: scale(0.95);
+    }
+    .cart:active{
+        transform: scale(1.10);
+        transition: all 0.5s;
+        }
+</style>
+</html>
