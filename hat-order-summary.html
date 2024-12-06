@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner banner1">
+        <h2>your bag:1 item</h2>
+    </div>
+    <div class="top-area">
+        <div class="left">
+            <div class="img">
+                <img src="merch/hat/med-black-hat.png" alt="black hat you chose">
+            </div>
+            <div class="l-info">
+                <div class="name">
+                    <h2>truker had</h2>
+                    <h3>$69,420</h3>
+                </div>
+                <div class="size">
+                    <h2>size:<strong>one size fits all</strong></h2>
+                </div>
+                <div class="color">
+                    <h2>color:<strong>black</strong></h2>
+                </div>
+                <div class="quantity">
+                    <h3>quantity: <strong>1</strong></h3>
+                    <div class="links">
+                        <a href="#">EDIT</a>
+                        <a href="#">REMOVE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+<style>
+    *{color: white}
+    .banner{
+        display: flex;
+        background-color: aqua;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner1{
+        width: 55.5555vw;
+        height: 6.944vw;
+    }
+    .top-area{
+        display: flex;
+    }
+    .top-area .left img{
+        width: 23.33333vw;
+    }
+    .left{
+        display: flex;
+        margin-top: 2.0833vw;
+        width: 53.47222vw;
+        margin-left: 2.0833vw;
+        justify-content: space-between;
+        border: 2px red solid;
+        
+    }
+    .l-info{
+        /* display: flex; */
+        background-color: black;
+        width: 27.7777vw;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .l-info .name{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .l-info .name h2{
+        font-size: 2em;
+    }
+    .l-info .name h3{
+        font-size: 1.5em;
+    }
+    .l-info .size h2{
+        margin-top: 2.986vw;
+    }
+    .l-info .size h2{
+       font-size: 1.5em;
+       font-weight: 200; 
+    }
+    .l-info .size strong{
+        /* font-size: 1.5em; */
+    }
+    .l-info .color h2{
+        font-size: 1.5em;
+        font-weight: 200;
+    }
+    .l-info .quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        margin-top: 90%; /*PLEASE FIX THIS TO BE DIS FLEX AND JUSTIFY TO FLEX-END*/
+    }
+</style>
+</html>

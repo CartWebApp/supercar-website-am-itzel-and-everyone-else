@@ -30,6 +30,10 @@
             </div>
             <div class="cart">
                 <a href="#">att to card</a>
+                <!-- section to add to cart -->
+                 <div class="overlay">
+                    <a href="hat-order-summary.html">order history</a>
+                 </div>
             </div>
             <div class="icon">
                 <img src="merch/hat/material-symbols_share.png" alt="share icon">
@@ -326,7 +330,15 @@
     z-index: 1;
     top: 40%;
 }
-
-
+.cart:hover .overlay{
+    /* visibility: visible; */
+    display: block;
+}
+.overlay{
+    display: none;
+    background-color: #003B76;
+    height: 200px;
+    width: 200px;
+}
 </style>
 </html>
