@@ -35,7 +35,19 @@
                 </div>
             </div>
         </div>
+        <div class="right">
+            <h2>order summary</h2>
+            <div class="one"><h3>subtotal</h3><p>69.99%</p></div>
+            <div class="one"><h3>subtotal</h3><p>69.99%</p></div>
+            <div class="one"><h3>subtotal</h3><p>69.99%</p></div>
+            <hr>
+            <div class="one"><strong>total</strong><p>69.99%</p></div>
+            <button><a href="hat-shipping-info.html">checkout</a></button>
+        </div>
         
+    </div>
+    <div class="banner banner2">
+        <h2>you may also like</h2>
     </div>
     
 </body>
@@ -43,7 +55,7 @@
     *{color: white}
     .banner{
         display: flex;
-        background-color: aqua;
+        background-color: #003B76;
         width: fit-content;
         align-items: center;
         justify-content: center;
@@ -60,13 +72,16 @@
     }
     .left{
         display: flex;
-        margin-top: 2.0833vw;
         width: 53.47222vw;
         margin-left: 2.0833vw;
         justify-content: space-between;
         border: 2px red solid;
         
     }
+    .left, .right{
+        margin-top: 2.0833vw;
+    }
+
     .l-info{
         /* display: flex; */
         background-color: black;
@@ -101,11 +116,52 @@
         font-weight: 200;
     }
     .l-info .quantity {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: flex-end;
-        margin-top: 90%; /*PLEASE FIX THIS TO BE DIS FLEX AND JUSTIFY TO FLEX-END*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.quantity h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.quantity .links {
+    display: flex;
+    gap: 1.8vw;
+}
+
+.right{
+    width: 28.4722vw;
+    height: 26.4583vw;
+    background-color: #161b69;
+}
+
+.right .one{
+    display: flex;
+    justify-content: space-between;
+}
+.right button{
+    border: none;
+    width: 100%;
+    height: 3.6111vw;
+    font-size: 1.5em;
+    background-color: #0073E6;
+    transition: all 0.3s;
+}
+.right button:hover{
+    transform: scale(0.95);
+}
+.right{
+    margin-left: 9.166vw;
+}
+ .banner2{
+    margin-top: 6.180vw;
+        width: 48.611vw;
+        height: 6.944vw;
     }
+
 </style>
 </html>

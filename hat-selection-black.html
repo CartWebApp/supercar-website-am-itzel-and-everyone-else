@@ -29,42 +29,57 @@
                 <a href="#">size guide</a>
             </div>
             <div class="cart">
-                <a href="#">att to card</a>
+                <div class="add-to-cart">
+                    <a href="#">att to card</a>
+                </div>
+
                 <!-- section to add to cart -->
-                 <div class="overlay">
+                 <div class="overlay" id="overlay"> <!--yeah, im taking a break from this crap, its pissing me off and i lowkey dont want to do it rn-->
+                    <div class="your-bag">
+                        <h2>your bag: 1 item</h2>
+                        <img src="merch/hat/x.png" alt="close icon">
+                    </div>
+                    <div class="hats">
+                        <img src="merch/hat/smaller-black-hat.png" alt="smaller black hat">
+                    </div>
+                    <!-- ahh to hell with it... you get it from here right? remember to hide the .overlay before deployying to make sure it works -->
+                    
+                    
                     <a href="hat-order-summary.html">order history</a>
-                 </div>
+                 </div> <!-- overlay ends here -->
             </div>
-            <div class="icon">
-                <img src="merch/hat/material-symbols_share.png" alt="share icon">
+            <div class="hidden">
+                <div class="icon">
+                    <img src="merch/hat/material-symbols_share.png" alt="share icon">
+                </div>
+                <hr>
+                <div class="option-names">
+                    <h2>description</h2>
+                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                </div>
+                
+                <hr>
+                <div class="option-names">
+                    <h2>description</h2>
+                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                </div>
+                <hr>
+                <div class="option-names">
+                    <h2>description</h2>
+                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                </div>
+                <hr>
+                <div class="option-names">
+                    <h2>description</h2>
+                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                </div>
+                <hr>
+                <div class="option-names">
+                    <h2>description</h2>
+                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                </div>
+                <hr>
             </div>
-            <hr>
-            <div class="option-names">
-                <h2>description</h2>
-                <img src="merch/down-arrow.png" alt="donw-arrow">
-            </div>
-            
-            <hr>
-            <div class="option-names">
-                <h2>description</h2>
-                <img src="merch/down-arrow.png" alt="donw-arrow">
-            </div>
-            <hr>
-            <div class="option-names">
-                <h2>description</h2>
-                <img src="merch/down-arrow.png" alt="donw-arrow">
-            </div>
-            <hr>
-            <div class="option-names">
-                <h2>description</h2>
-                <img src="merch/down-arrow.png" alt="donw-arrow">
-            </div>
-            <hr>
-            <div class="option-names">
-                <h2>description</h2>
-                <img src="merch/down-arrow.png" alt="donw-arrow">
-            </div>
-            <hr>
         </aside>
     </div>
     <div class="you-will-also-like">
@@ -244,6 +259,9 @@
     .size a{
         color: white;
     }
+    .cart{
+        width: 35.4166vw;
+    }
     .cart a{
         margin-top: 2.847vw;
         display: flex;
@@ -330,15 +348,48 @@
     z-index: 1;
     top: 40%;
 }
-.cart:hover .overlay{
+.cart:active .overlay{
     /* visibility: visible; */
     display: block;
 }
-.overlay{
+.cart:active ~.hidden,
+.cart:active .add-to-cart{
     display: none;
-    background-color: #003B76;
-    height: 200px;
-    width: 200px;
+    opacity: 0;
 }
+
+
+
+
+
+
+/* contents of overlay here */
+.overlay{
+    /* display: none; */
+    background-color: #0D0B9D;
+    height: 200px;
+    width: 100%;
+}
+.your-bag{
+    display: flex;
+    width: 100%;
+    background-color: #0055A9;
+}
+.your-bag h2{
+    font-size: 2.5em;
+}
+.your-bag img{
+    width: 2vw;
+    height: 2vw; /*because i want to get this done quickelly, ima be skipping over the sizing n such*/
+}
+.hats img{
+    height: 4vw;
+    width: 3vw;
+}
+
+
+
+
+/* ending of the overlay here */
 </style>
 </html>
