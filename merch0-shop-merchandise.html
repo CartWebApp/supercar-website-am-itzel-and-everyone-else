@@ -13,24 +13,39 @@
         <div class="bit-o-text">
             <h2>Trion Merchandise</h2>
             <h3>Exclusivity Redefined, Style Perfected</h3>
-            <a href="merch1-merchandise-all.html"><p>Browse All ></p></a>
+            <a href="merch1-merchandise-all.html"><p>Browse All</p><img src="merch/right-arrow.png" alt="right-arrow"> </a>
         </div>
     </div>
 
     <div class="three-cards">
         <div class="card">
-            <h2>Men ></h2>
-            <a href="merch2-man.html"><img src="merch/rectangle-250.png" alt="Men Merch Image"></a>
+            <a href="merch2-man.html"> 
+                <div class="option">
+                    <h2>Men</h2>
+                    <img src="merch/blue-right-arrow.png" alt="Right arrow" class="arrow">
+                </div>
+                <img src="merch/rectangle-250.png" alt="Men Merch Image" class="sub-hero">
+            </a>
         </div>
 
         <div class="card">
-            <h2>Women ></h2>
-            <a href="merch3-women.html"><img src="merch/rectangle-250-(1).png" alt="Women Merch Image"></a>
+            <a href="merch3-women.html"> 
+                <div class="option">
+                    <h2>Women</h2>
+                    <img src="merch/blue-right-arrow.png" alt="Right arrow" class="arrow">
+                </div>
+                <img src="merch/rectangle-250-(1).png" alt="Women Merch Image" class="sub-hero">
+            </a>
         </div>
 
         <div class="card">
-            <h2>Acessories ></h2>
-            <a href="merch4-accessories.html"><img src="merch/rectangle-250-(2).png" alt="Acessories Merch Image"></a>
+            <a href="merch4-accessories.html"> 
+                <div class="option">
+                    <h2>Accessories</h2>
+                    <img src="merch/blue-right-arrow.png" alt="Right arrow" class="arrow">
+                </div>
+                <img src="merch/rectangle-250-(2).png" alt="Acessories Merch Image" class="sub-hero">
+            </a>
         </div>
         
 
@@ -71,6 +86,7 @@
                 transform: translateY(-50%); /* Adjust for perfect vertical centering */
                 color: white;
                 text-align: left;
+                width: 29.210vw;
             }
     
             .bit-o-text h2 {
@@ -83,6 +99,7 @@
                 font-size: 2em;
                 color: white;
                 margin: 0;
+                font-weight: 600;
             }
 
             .three-cards{
@@ -92,32 +109,70 @@
                 margin-bottom: 10.7638vw;
             }
     
-            .bit-o-text p {
+            .bit-o-text a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
                 color: white;
                 border: #0073E6 3px solid;
-                height: auto;
-                width: auto;
+                /* height: auto; */
+                width: 17.847vw;
+                height: 4.5138vw;
+                /* width: auto; */
                 font-size: 1.5em;
                 padding: 5px 10px;
                 text-align: center;
                 margin-top: 10px;
-                display: inline-block;
+                /* display: inline-block; */
+                font-weight: 600;
             }
-    
-            .three-cards h2{
+            .bit-o-text img{
+                margin-left: 1.8055vw;
+                height: 4.513vw;
+            }
+            .bit-o-text a{
+                text-decoration: none;
+            }
+    /* HERERERERER */
+            .three-cards .option{
                 color: #0073E6;
                 font-size: 2em;
                 background-color: white;
             }
-            .card img{
-                height: 27.777vw;
+            .option{
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
             }
-            .card h2{
+            .option .arrow{
+                /* background-color: black; */
+                /* border: 3px solid black; */
+                /* top: 10%; */
+                width: 2.3888vw;
+                height: 100%;
+                margin-right: 1.8819vw; 
+                margin-top: 1.11vw;
+            }
+            .three-cards .card a{
+                text-decoration: none;
+            }
+            .card{
+                width: 27.777vw;
+            }
+            .card .sub-hero{
+                /* height: 27.777vw; */
+                width: 100%;
+            }
+            .card .option h2{
+                /* border: 3px solid black; */
+                font-size: 2em;
+                font-weight: 600;
                 margin-top: 1.11vw;
                 /* margin-left: 2.5vw; */
                 justify-self: center;
                 width: 100%; /*yeah i have no idea how to center the text... i dont want to spend all this time tryign to figure out how to make it work*/
-
+                margin-left: 2.8819vw;
             }
         </style>
 </body>
