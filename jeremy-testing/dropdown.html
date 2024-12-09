@@ -14,7 +14,7 @@
         /* Dropdown container */
         .dropdown {
             position: relative;
-            display: inline-block;
+            /* display: inline-block; */
         }
 
         /* Dropdown button styling */
@@ -35,7 +35,7 @@
             background-color: #f9f9f9;
             min-width: 160px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            /* z-index: 1; */
         }
 
         /* Style for dropdown items */
@@ -66,12 +66,12 @@
 <body>
 
     <!-- Accessible Dropdown -->
-    <div class="dropdown" tabindex="0">
+    <div class="dropdown">
         <button>Dropdown</button>
-        <div class="dropdown-content" role="menu" aria-labelledby="dropdownButton">
-            <a href="#" role="menuitem">Option 1</a>
-            <a href="#" role="menuitem">Option 2</a>
-            <a href="#" role="menuitem">Option 3</a>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
         </div>
     </div>
 

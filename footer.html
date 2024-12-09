@@ -22,7 +22,10 @@
     <footer>
         <div class="top">
             <div class="account footermedia">
-                <h2>Account</h2>
+                <div class="mobile">
+                    <h2>Account</h2>
+                    <img src="images/home/down-arrow.png">
+                </div>
                 <a>Settings</a>
                 <a>Saved Car Configurations</a>
                 <a>Order History</a>
@@ -175,6 +178,7 @@
 
             
         }
+        
         .icons { 
             display: flex;
             width: 70%;
@@ -188,6 +192,19 @@
         #footer-tri-icon { 
             height: 5vw;
 
+        }
+
+        .mobile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid green;
+            align-self: center;
+            justify-items: center;
+        }
+        .mobile img{
+            width: 10vw;
+            border: 2px solid red;
         }
 
     </style>
