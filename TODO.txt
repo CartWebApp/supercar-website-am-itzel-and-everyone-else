@@ -50,3 +50,13 @@ REVIEW THE ENTIRE WEBSITE BEFORE SUBMITION
 
 *things for birthday boy to comp:
 make the image and text fit on the hat-shopping-menu page (lmk when you are done)
+
+put the code for header and footer in ONE html file (make sure they are appended properelly)
+
+
+
+
+j- merch... All, and Customization, and html raw pages
+a- nem customization rewiev (no functionality)
+
+both- MEDIA QUERRIES
