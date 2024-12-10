@@ -2,6 +2,24 @@
     color: white;
 }
 
+.banner-cont { 
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.banner-cont h1 {
+    position: absolute;
+    text-align: center;
+    align-self: center; 
+    margin:0;
+    margin-top: 6.944vw;
+    line-height: normal;
+    font-size: 72px;
+
+}
+
 
 .sideview-car-showcase { 
     margin-top: 6.319vw;
@@ -73,14 +91,88 @@
     display: flex; 
     flex-direction: row;
     width: 99vw;
-    height: 5.6944vw;
+    height: 5.2083vw;
+
+    align-items: center;
 }
 
 .box-name-money-cont { 
     display: flex;
     flex-direction: row;
     width: 99vw;
-    
+    height: 7.291vw;
+    align-items: center;
 }
 
+.body-rim-color-tabs p { 
+    font-size: 40px;
+    font-weight: 600;
+}
+.body-rim-color-tabs p:nth-child(1) { 
+    margin-left: 5.3472vw;
+}
+.body-rim-color-tabs p:nth-child(2) { 
+    margin-left: 2.9166vw;
+}
 
+.color-box { 
+    background-color: black;
+    width: 4.652vw;
+    height: 4.652vw;
+    margin-left: 5.3472vw;
+    border: white 2px solid;
+}
+.color-name-money { 
+    margin-left: 1.527vw;
+}
+.color-name-money p:first-child {
+    font-size: 32px;
+    font-weight: 500;
+}
+.color-name-money p:nth-child(2) { 
+    font-size: 32px;
+    font-weight: 300;
+}
+.box-name-money-cont .edit{ 
+    display: flex;
+    width: 80.902vw;
+    justify-content: flex-end;
+    margin-right: 5.2083vw;
+}
+
+.order-summary-head {
+    height: 16.8055vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.order-summary-head h2{ 
+    margin-top: 6.1805vw;
+    margin-bottom: 5.069vw;
+    font-size: 72px;
+    font-weight: 600;
+}
+
+.summary-review {
+    height: 35.8333vw;
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+}
+.summary-left { 
+    width: 32.986vw;
+    display: flex;
+    flex-direction: column;
+}
+.summary-right .legalthing { 
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+.summary-left > div { 
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
