@@ -162,7 +162,7 @@
     width: 99vw;
 }
 .summary-left { 
-    width: 32.986vw;
+    width: 32.9861vw;
     display: flex;
     flex-direction: column;
 }
@@ -173,6 +173,77 @@
 .summary-left > div { 
     display: flex;
     flex-direction: row;
-
     align-items: center;
+}
+
+.summary-left p { 
+    font-size: 24px;
+    margin:0;
+    font-weight: 300;
+}
+
+.summary-left .stand-equip img { 
+    width: 2.08333vw;
+    height: 2.08333vw;
+}
+.summary-left .tri-code img { 
+    width: 1.66666vw;
+    height: 2.0083vw;
+}
+.summary-left .change-model img { 
+    width: 2.5694vw;
+    height: 2.0625vw;
+}
+
+.summary-left .stand-equip { 
+    display: flex;
+    margin-left: 5.69444vw;
+}
+.summary-left .tri-code { 
+    margin-left: 5.902vw;
+    margin-top: 2.2222vw;
+}
+.summary-left .change-model { 
+    margin-left: 5.41666vw;
+    margin-top: 2.2222vw;
+}
+.summary-left div:nth-child(1) p { 
+    margin-left: 1.875vw;
+    
+}
+.summary-left div:nth-child(2) p { 
+    margin-left: 2.0833333vw;
+}
+.summary-left div:nth-child(3) p { 
+    margin-left: 1.6666vw;
+}
+
+
+
+.summary-left,
+.summary-right { 
+    margin-top: 5.0694vw;
+}
+
+.summary-right { 
+    display: flex;
+    flex-direction: column;
+    width: 62.1527vw;
+}
+
+.summary-right div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-right div p:first-child {
+    font-size: 32px; 
+    font-weight: 500;
+}
+
+.summary-right div p:nth-child(2) {
+    font-size: 24px; 
+    font-weight: 300;
+    display: flex;
 }
