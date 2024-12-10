@@ -60,3 +60,5 @@ j- merch... All, and Customization, and html raw pages
 a- nem customization rewiev (no functionality)
 
 both- MEDIA QUERRIES
+
+hat-selection-black (needs functionality, jeremy will try to get it but hopes are low)

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="all">
+        <div class="left">
+            <img class="main-img" src="images/interior/interior.png" alt="nemesis interior">
+            <div class="img-overlay">
+                <img class="overlay-img" src="images/all/zoom-in.png" alt="lil-zoom-in">
+            </div>
+        </div>
+        <div class="right">
+            <div class="mm">
+                <h2>Exterior</h2>
+                <h3>Body Color</h3>
+                <hr>
+
+
+                <div class="options">
+                    <!-- Hidden checkbox for toggling -->
+                    <input type="checkbox" id="toggle-content" class="toggle-checkbox">
+                    <label for="toggle-content" class="name">
+                        <h2>color</h2>
+                        <img src="images/interior/down-arrow.png" alt="down arrow">
+                    </label>
+                    <!-- Hidden content -->
+                    <div class="hidden-content">
+                        <p>This is the hidden content that appears when you click on color.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="options">
+                    <!-- Hidden checkbox for toggling -->
+                    <input type="checkbox" id="toggle-contentw" class="toggle-checkbox">
+                    <label for="toggle-contentw" class="name">
+                        <h2>color</h2>
+                        <img src="images/interior/down-arrow.png" alt="down arrow">
+                    </label>
+                    <!-- Hidden content -->
+                    <div class="hidden-content">
+                        <p>This is the hidden content that appears when you click on color.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Lexend Deca";
+    }
+
+    body {
+        color: white;
+    }
+
+    .all {
+        position: relative;
+        display: flex;
+    }
+
+    .left {
+        position: relative;
+        display: inline-block;
+        width: 65.972vw;
+        height: 65.972vw;
+    }
+
+    .main-img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .img-overlay {
+        border: 2px solid red;
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .overlay-img {
+        width: 3.61111vw;
+    }
+
+    .mm {
+        margin-left: 2.083333vw;
+        width: 29.166vw;
+    }
+
+    .right {
+        height: 80.763vw;
+        width: 33.33vw;
+        background-color: #003B76;
+    }
+
+    .right h2 {
+        font-size: 4em;
+    }
+
+    .right h3 {
+        margin-top: 3.33vw;
+        font-size: 2em;
+    }
+
+    hr {
+        margin-top: 1.8055vw;
+        width: 100%;
+    }
+
+    .name {
+        display: flex;
+        border: 2px solid blue;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .name h2 {
+        font-size: 2em;
+    }
+
+    .name img {
+        height: 1.534vw;
+        width: 2.50416vw;
+        transition: all 0.3s ease;
+    }
+
+    .toggle-checkbox {
+        display: none; /* Hide the checkbox */
+    }
+
+    .hidden-content {
+        display: none; /* Initially hidden */
+        margin-top: 1em;
+        border: 1px solid white;
+        padding: 1em;
+        background-color: #002B5A;
+        font-size: 1.2em;
+    }
+
+    .toggle-checkbox:checked ~ .hidden-content {
+        display: block; /* Show when the checkbox is checked */
+    }
+</style>
+</html>

@@ -1,3 +1,4 @@
+<!-- pro gamer move... im not doing this -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +14,10 @@
         </aside>
         <aside class="right">
             <div class="top-text">
-                <h4>Acessopre</h4>
-                <h3>trucker cap</h3>
+                <h4>Accessories</h4>
+                <h3>Trucker Cap</h3>
                 <h4>#15.00</h4>
-                <h4>color: <strong>black</strong></h4>
+                <h4>Color: <strong>Black</strong></h4>
             </div>
             <div class="four-imgs">
                 <img src="merch/hat/small-black-hat.png" alt="small black hat">
@@ -25,29 +26,31 @@
                 <img src="merch/hat/small-red-hat.png" alt="small black hat">
             </div>
             <div class="size">
-                <h3>size: <strong>one size fits all</strong></h3>
-                <a href="#">size guide</a>
+                <h3>Size: <strong>One Size Fits All</strong></h3>
+                <a href="#">Size Guide</a>
             </div>
+
+
             <div class="cart">
                 <div class="add-to-cart">
-                    <a href="#">att to card</a>
+                    <input type="checkbox" id="cart-checkbox"> Add to Cart
                 </div>
-
-                <!-- section to add to cart -->
-                 <div class="overlay" id="overlay"> <!--yeah, im taking a break from this crap, its pissing me off and i lowkey dont want to do it rn-->
+            
+                <div class="overlay" id="overlay"> 
                     <div class="your-bag">
-                        <h2>your bag: 1 item</h2>
+                        <h2>Your Bag: 1 item</h2>
                         <img src="merch/hat/x.png" alt="close icon">
                     </div>
                     <div class="hats">
                         <img src="merch/hat/smaller-black-hat.png" alt="smaller black hat">
                     </div>
-                    <!-- ahh to hell with it... you get it from here right? remember to hide the .overlay before deployying to make sure it works -->
-                    
-                    
-                    <a href="hat-order-summary.html">order history</a>
-                 </div> <!-- overlay ends here -->
+                    <a href="hat-order-summary.html">Order History</a>
+                </div>
             </div>
+            
+
+            
+            
             <div class="hidden">
                 <div class="icon">
                     <img src="merch/hat/material-symbols_share.png" alt="share icon">
@@ -245,7 +248,7 @@
         width: 52.22vw;
     }
     .right .top-text{
-        background-color: aqua;
+        /* background-color: aqua; */
         width: 35.625vw;
     }
     .right .top-text h4{
@@ -256,7 +259,7 @@
         margin-top: 2.0138vw;
     }
     .right .top-text :nth-child(4){
-        background-color: black;
+        /* background-color: black; */
         margin-top: 2.0138vw;
     }
     .right .top-text strong{
@@ -374,12 +377,18 @@
     z-index: 1;
     top: 40%;
 }
-.cart:active .overlay{
+
+
+
+
+
+
+.cart:checked .overlay{
     /* visibility: visible; */
     display: block;
 }
-.cart:active ~.hidden,
-.cart:active .add-to-cart{
+.cart:checked ~.hidden,
+.cart:checked .add-to-cart{
     display: none;
     opacity: 0;
 }
@@ -390,28 +399,54 @@
 
 
 /* contents of overlay here */
-.overlay{
-    /* display: none; */
+/* Initial state of the overlay: hidden */
+.overlay {
+    display: none;
     background-color: #0D0B9D;
     height: 200px;
     width: 100%;
 }
-.your-bag{
+
+/* Show overlay when the checkbox is checked */
+#cart-checkbox:checked ~ .overlay {
+    display: block;
+}
+
+/* Style adjustments for the "Your Bag" section */
+.your-bag {
     display: flex;
     width: 100%;
     background-color: #0055A9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-.your-bag h2{
+
+.your-bag h2 {
     font-size: 2.5em;
+    color: white;
 }
-.your-bag img{
+
+.your-bag img {
     width: 2vw;
-    height: 2vw; /*because i want to get this done quickelly, ima be skipping over the sizing n such*/
+    height: 2vw;
+    cursor: pointer; /* Suggest user can click to close */
 }
-.hats img{
+
+/* Hat image styling */
+.hats img {
     height: 4vw;
     width: 3vw;
 }
+
+/* Link styling */
+a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
 
 
 
