@@ -137,7 +137,7 @@
         <div class="box-name-money-cont">
             <div class="color-box"></div>
             <div class="color-name-money">
-                <p>Variable</p>
+                <p>Black</p>
                 <p>$1,490.00</p>
             </div>
             <div class="edit">
@@ -167,9 +167,9 @@
             <p>Stitching Color</p>
         </div>
         <div class="box-name-money-cont">
-            <div class="color-box"></div>
+            <div class="color-box2"></div>
             <div class="color-name-money">
-                <p>Variable</p>
+                <p>Pumice</p>
                 <p>$1,490.00</p>
             </div>
             <div class="edit">
@@ -200,17 +200,17 @@
             </div>
         </div>
         <div class="summary-right">
-            <div>
-                <p>Base Price</p>
-                <p>$1,600,000.00</p>
+            <div id="sr-d1">
+                <p class="leftbold p1">Base Price</p>
+                <p class="rightmoney">$1,600,000.00</p>
             </div>
-            <div>
-                <p>Price for Paint</p>
-                <p>$2,980.00</p>
+            <div id="sr-d2">
+                <p class="leftbold p2">Price for Paint</p>
+                <p class="rightmoney">$2,980.00</p>
             </div>
-            <div>
-                <p>Delivery, Processing and Handling Fee</p>
-                <p>$1,490.00</p>
+            <div id="sr-d3">
+                <p class="leftbold p3">Delivery, Processing and Handling Fee</p>
+                <p class="rightmoney">$1,490.00</p>
             </div>
             <hr>
             <div class="totalprice">
@@ -220,7 +220,7 @@
             <hr>
             <div>
                 <p class="legalthing">* All information is subject to change without notice. The manufacturer can not accept liability arising from the use of any in formation contained herein. Only an actual invoice issued by PCNA at the time a vehicle is sold . . .</p>
-                <a>Read More</a>
+                <a class="summary-readmore">Read More</a>
             </div>
         </div>
     </div>
@@ -248,6 +248,7 @@
     }
 
     header {
+        
         display: flex;
         flex-direction: column;
         width: 99vw;
@@ -260,6 +261,7 @@
         background: linear-gradient(to bottom,#050133, rgba(0,0,0,0.1));
         justify-content: center;
         align-items: center;
+
     }
 
     ul {
@@ -435,13 +437,6 @@
     height: 2.5vw;
     transition: ease-in-out .15s;
 }
-
-
-
-/* for mr gpt 
-I want animations for the closing and opening of the "sub" class section using the hmrfa arrow,
-I want it to grow out of the main <a> tag that titles the sub section when it opens and for it to go back into the <a> tag when closing */
-
 
 </style>
 <script>

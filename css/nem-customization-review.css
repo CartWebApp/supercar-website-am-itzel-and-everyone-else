@@ -122,6 +122,13 @@
     margin-left: 5.3472vw;
     border: white 2px solid;
 }
+.color-box2 { 
+    background-color: #BABCB7;
+    width: 4.652vw;
+    height: 4.652vw;
+    margin-left: 5.3472vw;
+    border: white 2px solid;
+}
 .color-name-money { 
     margin-left: 1.527vw;
 }
@@ -239,8 +246,8 @@
 
 
 /* FIX HERE */
-.summary-right div p:first-child {
-    font-size: 32px; 
+.summary-right .leftbold {
+    font-size: 40px; 
     font-weight: 500;
     
 }
@@ -249,14 +256,16 @@
 
 
 
-
-
-.summary-right div p:nth-child(2) {
+#sr-d2, #sr-d3 { 
+    margin-top: 1.180vw;
+}
+.p2 {
     font-size: 24px; 
     font-weight: 300;
     display: flex;
-    margin-top: 1.180vw;
+    
 }
+
 
 .summary-right hr {
     margin-top: 2.916vw;
@@ -272,8 +281,25 @@
 .totalprice p:nth-child(2) {
     font-size: 40px;
 }
+
 /* FIX HERE */
 .legalthing { 
-    font-size: 50px;
+    font-size: 32px;
+    font-weight: 300;
 }
 /* HERE */
+
+
+.summary-readmore { 
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 53.6111vw;
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.summary-right .rightmoney { 
+    font-size: 32px;
+    font-weight: 300;
+}
