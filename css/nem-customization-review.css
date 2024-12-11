@@ -176,7 +176,7 @@
     align-items: center;
 }
 
-.summary-left p { 
+.summary-left a { 
     font-size: 24px;
     margin:0;
     font-weight: 300;
@@ -207,14 +207,14 @@
     margin-left: 5.41666vw;
     margin-top: 2.2222vw;
 }
-.summary-left div:nth-child(1) p { 
+.summary-left div:nth-child(1) a { 
     margin-left: 1.875vw;
     
 }
-.summary-left div:nth-child(2) p { 
+.summary-left div:nth-child(2) a { 
     margin-left: 2.0833333vw;
 }
-.summary-left div:nth-child(3) p { 
+.summary-left div:nth-child(3) a { 
     margin-left: 1.6666vw;
 }
 
@@ -237,13 +237,43 @@
     justify-content: space-between;
 }
 
+
+/* FIX HERE */
 .summary-right div p:first-child {
     font-size: 32px; 
     font-weight: 500;
+    
 }
+/* HERE */
+
+
+
+
+
 
 .summary-right div p:nth-child(2) {
     font-size: 24px; 
     font-weight: 300;
     display: flex;
+    margin-top: 1.180vw;
 }
+
+.summary-right hr {
+    margin-top: 2.916vw;
+}
+.summary-right .totalprice { 
+    margin-top: 2.916vw;
+    height: 8.958vw;
+}
+
+.totalprice p:first-child{ 
+    font-size: 44px;
+}
+.totalprice p:nth-child(2) {
+    font-size: 40px;
+}
+/* FIX HERE */
+.legalthing { 
+    font-size: 50px;
+}
+/* HERE */
