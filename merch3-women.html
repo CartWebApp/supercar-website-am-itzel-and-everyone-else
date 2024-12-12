@@ -3,15 +3,98 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Acessories</title>
+        <title>Women's Merch Page</title>
         <link rel="icon" href="images/all/icon.png">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            .entire-sectionmh{
+                flex-direction: row-reverse;
+            }
+
+            @media (max-width: 768px){
+        .bit-o-textmh h2{
+            font-size: 2em;
+        }
+        .bit-o-textmh h3{
+            font-size: 1em;
+        }
+        .left{
+            display: none;
+        }
+        .mini-heromh{
+            display: none;
+        }
+        .two-cardsmh{
+            justify-content: space-around;
+        }
+        
+
+    }
+    @media (max-width: 768px){
+        .entire-sectionmh .one-clothingmh{ /*this is the only notable change because of the flex-direction im guessing*/
+            /* border: 2px solid green; */
+            width: 49%;
+        }
+        .one-clothingmh img{
+            width: 100%;
+        }
+        .lil-sectionmh p,
+        .right-lsmh{
+            font-size: 1em;
+        }
+        .bit-o-textmh h2{
+            font-size: 1.5em;
+            width: 50%;
+        }
+        .bit-o-textmh h3{
+            font-size: 1em;
+            width: 60%;
+        }
+        .all-merch-buttonmh{
+            width: 100%;
+            height: 10.454vw;
+
+        }
+        .all-merch-buttonmh p{
+            font-size: .8em;
+        }
+        .one-clothingmh h3 {
+            font-size: 1.1em;
+            text-align: center;
+            align-self: center;
+            /* border: 2px solid red; */
+        }
+        .one-clothingmh p{
+            /* align-self: center; */
+            text-align: center;
+            font-size: 1em;
+            text-decoration: overline; /* using to sepperate them*/
+        }
+        .colorsmh{
+            /* border: 2px solid green; */
+            /* align-items: center; */
+            /* text-align: center; */
+            justify-content: center;
+            /* width: 49%; */
+        }
+        .one-clothingmh button{
+            font-size: 1em;
+        }
+        .one-clothingmh{
+            /* border: 2px solid green; */
+        }
+
+    }
+
+
+        </style>
     </head>
 <body>
+    
 
     <div class="top-containermh">
         <div class="hero-imgmh">
-        <img src="merch/headers/acessories.png" alt="Hero Image">
+        <img src="merch/headers/women.png" alt="Hero Image">
         </div>
         <div class="bit-o-textmh">
             <h2>Trion Merchandise</h2>
@@ -20,7 +103,7 @@
     </div>
     
     <div class="all-merch-buttonmh">
-        <p>Acessories</p>
+        <p>Women</p>
     </div>
 
     <div class="lil-sectionmh">
@@ -29,18 +112,18 @@
             <p>Filter & Sort</p>
         </div>
         <div class="right-lsmh">
-            <p>12 Items</p>
+            <p>4 Items</p>
         </div>
     </div>
-    
+
 
 
     <div class="entire-sectionmh"> <!--section 1 here boss-->
-        <img src="merch/acessories/acessorsies-hero.png" class="mini-heromh" alt="Acessories Hero Image">
+        <img src="merch/womens/women-hero.png" class="mini-heromh" alt="Women Hero Image">
         <div class="four-clothingmh">
             <div class="two-cardsmh">
                 <div class="one-clothingmh">
-                    <a href="hat-selection-black.html"><img src="merch/acessories/hat.png" alt="Acessories Hat"></a> <!--cool now its clickable... yey-->
+                    <img src="merch/womens/brown-shirt.png" alt="Womens Brown Shirt">
                     <h3>Crewneck T-shirt</h3>
                     <p>$15.00</p>
                     <div class="colorsmh">
@@ -66,7 +149,7 @@
                 </div>
 
                 <div class="one-clothingmh">
-                    <img src="merch/acessories/bag.png" alt="Acessories Bag">
+                    <img src="merch/womens/hoodie.png" alt="Womens Hoodie">
                     <h3>Crewneck T-shirt</h3>
                     <p>$15.00</p>
                     <div class="colorsmh">
@@ -94,7 +177,7 @@
 
             <div class="two-cardsmh">
                 <div class="one-clothingmh">
-                    <img src="merch/acessories/iphone-case.png" alt="Acessories Iphone Case">
+                    <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
                     <h3>Crewneck T-shirt</h3>
                     <p>$15.00</p>
                     <div class="colorsmh">
@@ -120,7 +203,7 @@
                 </div>
 
                 <div class="one-clothingmh">
-                    <img src="merch/acessories/coffee-mug.png" alt="Acessories Coffee Mug">
+                    <img src="merch/womens/tank-top.png" alt="Womens Tank Top">
                     <h3>Crewneck T-shirt</h3>
                     <p>$15.00</p>
                     <div class="colorsmh">
@@ -149,10 +232,6 @@
 
         
     </div>
+
 </body>
-<style>
-.carasel .section-of-container button img{
-    background-color: black;
-}
-</style>
 </html>

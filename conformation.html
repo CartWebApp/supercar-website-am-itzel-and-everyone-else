@@ -77,17 +77,82 @@
             font-weight: 500;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
+            /* padding: vw; */
         }
 
         .lower-box:hover {
             background-color: #005bb5;
         }
         .lower-box:active{
-            border: #03519e 2px solid;
+            /* border: #03519e 2px solid; */
         }
         a{
             color: white;
             text-decoration: none;
+        }
+        .lower-box img{
+            margin-left: 1.8055vw;
+        }
+
+        @media (max-width: 1275px){
+            .lower-box{
+                width: 50vw;
+            }
+            .lower-box img{
+                width: 2vw;
+            }
+        }
+        @media (max-width: 973px){
+            .box{
+                height: 60vw;
+                /* border: 2px solid green; */
+                /* align-items: normal; */
+                justify-content: flex-start;
+                
+            }
+            .icon{
+                /* border: 2px solid red; */
+                /* padding-top: 0; */
+                /* margin-top: 0; */
+                /* display: flex; */
+                /* top: 110%; */
+                margin-top: 3.863vw;
+                /* margin-left: 10%; */
+            }
+            .trion-code{
+                font-size: 2em;
+                /* width: 60%; */
+            }
+            .lower-box{
+                /* font-size: 1em; */
+                /* width: 20%; */
+            }
+
+        }
+        @media (max-width:791px){
+            .trion-code{
+                font-size: 2em;
+                margin-left: 4.7727vw;
+                margin-right: 4.7727vw;
+                /* border: 2px solid red; */
+            }
+        }
+        .box img{
+            /* width: 3vw; */
+        }
+        @media (max-width: 635px){
+            .lower-box{
+                /* font-size: 1em; */
+                width: 80vw;
+                height: 10vw;
+            }
+            .box{
+                height: 90vw;
+            }
+            img[src="images/icons/small/right-arrow.png"]{
+                height: 10vw;
+                width: auto;
+            }
         }
         
     </style>
@@ -98,7 +163,7 @@
             <img src="images/all/icon.png" alt="Logo" class="icon">
             <h2>Thank You!</h2>
             <p class="trion-code">Your Trion code has been sent to your email.</p>
-            <a href="index.html"><div class="lower-box">Continue Browsing ></div></a>
+            <a href="index.html"><div class="lower-box">Continue Browsing <img src="images/icons/small/right-arrow.png"></div></a>
         </div>
     </div>
 </body>
