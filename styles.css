@@ -198,11 +198,14 @@ flex-direction: column;
 justify-content: space-between; /* Space out the rows of cards evenly */
 flex-grow: 1; /* Allow it to stretch and take available height */
 gap: 1rem; /* Spacing between rows */
+border: 2px solid green;
 }
 .two-cardsmh {
+    width: 100%;
 display: flex;
 gap: 1rem; /* Spacing between items in the row */
 justify-content: space-between;
+
 }
 
 .lil-sectionmh{
@@ -348,7 +351,19 @@ width: 23.055vw;
     transform: scale(0.95); /*kek*/
 }
 
-
+@media (max-width: 692px){
+    .jazzmh .mini-heromh{
+       display: none;
+    }
+    .two-cardsmhh{
+       display: flex;
+       /* align-content: center; */
+       justify-content: center;
+       border: 2px solid green;
+       /* gap: 0; */
+       width: 30%;
+    }
+   }
 
 
 /* end merchandice */

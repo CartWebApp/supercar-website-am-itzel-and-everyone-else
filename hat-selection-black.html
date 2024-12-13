@@ -1,11 +1,12 @@
-<!-- pro gamer move... im not doing this -->
+<!-- fix the add to cart before deployign to the rest -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hat Selection Black</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/all/icon.png">
 </head>
 <body>
     <div class="container">
@@ -20,10 +21,10 @@
                 <h4>Color: <strong>Black</strong></h4>
             </div>
             <div class="four-imgs">
-                <img src="merch/hat/small-black-hat.png" alt="small black hat">
-                <img src="merch/hat/small-white-hat.png" alt="small white hat">
-                <img src="merch/hat/small-blue-hat.png" alt="small black hat">
-                <img src="merch/hat/small-red-hat.png" alt="small black hat">
+                <a href="hat-selection-black.html"><img src="merch/hat/small-black-hat.png" alt="small black hat"></a>
+                <a href="hat-selection-white.html"><img src="merch/hat/small-white-hat.png" alt="small white hat"></a>
+                <a href="hat-selection-blue.html"><img src="merch/hat/small-blue-hat.png" alt="small black hat"></a>
+                <a href="hat-selection-red.html"><img src="merch/hat/small-red-hat.png" alt="small black hat"></a>
             </div>
             <div class="size">
                 <h3>Size: <strong>One Size Fits All</strong></h3>
@@ -33,7 +34,8 @@
 
             <div class="cart">
                 <div class="add-to-cart">
-                    <input type="checkbox" id="cart-checkbox"> Add to Cart
+                    <input type="checkbox" id="cart-checkbox">
+                    <label for="cart-checkbox">Add to Cart</label>
                 </div>
             
                 <div class="overlay" id="overlay"> 
@@ -43,8 +45,30 @@
                     </div>
                     <div class="hats">
                         <img src="merch/hat/smaller-black-hat.png" alt="smaller black hat">
+                        <div class="info">
+                            <div class="hat">
+                                <h2>Trucker Cap</h2>
+                                <strong>$15.00</strong>
+                            </div>
+                            <div class="size">
+                                <strong>Size:</strong>
+                                <h2>One Size Fits All</h2>
+                            </div>
+                            <div class="color">
+                                <strong>Color:</strong>
+                                <h2>Black</h2>
+                            </div>
+                            <div class="quantity">
+                                <strong>Quantity:</strong>
+                                <h2>1</h2>
+                            </div>
+                            <a href="#">REMOVE</a>
+                        </div>
                     </div>
-                    <a href="hat-order-summary.html">Order History</a>
+                    <div class="low-link">
+                        <a href="hat-order-summary.html" id="checkout-link">Ready to Checkout</a>
+                    </div>
+                    
                 </div>
             </div>
             
@@ -57,28 +81,28 @@
                 </div>
                 <hr>
                 <div class="option-names">
-                    <h2>description</h2>
+                    <h2>Description</h2>
                     <img src="merch/down-arrow.png" alt="donw-arrow">
                 </div>
                 
                 <hr>
                 <div class="option-names">
-                    <h2>description</h2>
+                    <h2>Details</h2>
                     <img src="merch/down-arrow.png" alt="donw-arrow">
                 </div>
                 <hr>
                 <div class="option-names">
-                    <h2>description</h2>
+                    <h2>Materials</h2>
                     <img src="merch/down-arrow.png" alt="donw-arrow">
                 </div>
                 <hr>
                 <div class="option-names">
-                    <h2>description</h2>
+                    <h2>Shipping & Returns</h2>
                     <img src="merch/down-arrow.png" alt="donw-arrow">
                 </div>
                 <hr>
                 <div class="option-names">
-                    <h2>description</h2>
+                    <h2>Customer Care</h2>
                     <img src="merch/down-arrow.png" alt="donw-arrow">
                 </div>
                 <hr>
@@ -86,7 +110,7 @@
         </aside>
     </div>
     <div class="you-will-also-like">
-        <h2>you may also like</h2>
+        <h2>You May Also Like</h2>
     </div>
     <div class="carasel">
         <div class="section-of-container">
@@ -95,8 +119,8 @@
         <!-- Custom circle buttons with input -->
             <button> <img src="merch/down-arrow.png"></button>
                 <div class="one-clothingmh">
-                <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
-                <h3>Crewneck T-shirt</h3>
+                <img src="merch/hat/white-phone-case.png" alt="White Phone Case">
+                <h3>iPhone Phone Case</h3>
                 <p>$15.00</p>
                 <div class="colorsmh">
                     <!-- Custom circle buttons with input -->
@@ -123,8 +147,8 @@
 
             <!-- second section -->
             <div class="one-clothingmh">
-                <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
-                <h3>Crewneck T-shirt</h3>
+                <img src="merch/hat/white-mug.png" alt="White Mug">
+                <h3>Travel Mug</h3>
                 <p>$15.00</p>
                 <div class="colorsmh">
                     <!-- Custom circle buttons with input -->
@@ -150,8 +174,8 @@
 
             <!-- third section -->
             <div class="one-clothingmh">
-                <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
-                <h3>Crewneck T-shirt</h3>
+                <img src="merch/hat/black-bag.png" alt="Black Bag">
+                <h3>Tote Bag</h3>
                 <p>$15.00</p>
                 <div class="colorsmh">
                     <!-- Custom circle buttons with input -->
@@ -177,8 +201,8 @@
 
             <!-- fourth section -->
             <div class="one-clothingmh">
-                <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
-                <h3>Crewneck T-shirt</h3>
+                <img src="merch/hat/black-longsleeve.png" alt="Black Long Sleeve">
+                <h3>Long Sleeve T-shirt</h3>
                 <p>$15.00</p>
                 <div class="colorsmh">
                     <!-- Custom circle buttons with input -->
@@ -201,33 +225,7 @@
                 </div>
                 <button class="add-to-cartmh">Add to Cart</button>
             </div>
-            <div class="one-clothingmh">
-                <img src="merch/womens/long-sleeve.png" alt="Womens Long Sleeve">
-                <h3>Crewneck T-shirt</h3>
-                <p>$15.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="black" class="color-inputmh">
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="white" class="color-inputmh">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="blue" class="color-inputmh">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="red" class="color-inputmh">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <button class="add-to-cartmh">Add to Cart</button>
-            </div>
-        </div>
-    </div>
+            
     <div class="arrow">
         <img src="merch/right-arrow.png" alt="right arrow">
     </div>
@@ -238,6 +236,7 @@
 <style>
     body{
         color: white;
+        overflow-x: hidden;
     }
     .container{
         margin-top: 5.9vw; /* could change if you want */
@@ -275,6 +274,10 @@
     }
     .four-imgs img{
         width: 7.708vw;
+        transition: all 0.3s ease;
+    }
+    .four-imgs img:hover{
+        transform: scale(0.95);
     }
 
     /* sizing here */
@@ -282,12 +285,29 @@
         display: flex;
         justify-content: space-between;
     }
-    .size strong{
-        font-weight: 100;
+    .size{
+        /* font-weight: 100; */
+        /* color: green; */
+        font-size: 1em;
+        margin-top: 1.8055vw;
+    }
+    .size h3 strong{
+        /* color: green; */
+        font-size: 1em;
     }
     .size a{
         color: white;
+        /* border: 2px solid green; */
+        margin-top: 0;
     }
+    .info .size h2{
+        font-size: 1em;
+        color: black;
+    }
+
+
+
+    
     .cart{
         width: 35.4166vw;
     }
@@ -305,6 +325,13 @@
     .cart a:hover{
         transform: scale(0.95);
     }
+    #cart:checked ~ .overlay {
+    display: block;
+}
+
+/* #cart-checkbox:checked ~ .overlay { display: flex;} */
+
+
     /* .cart:active{
         transform: scale(1.10);
         border: #0073E6 4px solid;
@@ -365,17 +392,20 @@
     position: relative;
     display: flex;
     margin-top: 1.9444vw;
-    margin-left: 2.0833vw;
+    /* margin-left: 2.0833vw; */ /*it was here lmao*/
     margin-right: 2.777vw;
     justify-content: space-between;
+    gap: .2vw;
 }
 .carasel .section-of-container .arrow img{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     /* position: relative; */
     position: absolute;
     z-index: 1;
     top: 40%;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 
@@ -403,8 +433,9 @@
 .overlay {
     display: none;
     background-color: #0D0B9D;
-    height: 200px;
-    width: 100%;
+    height: 32.77777vw; /*-20 because it dident look right*/
+    /* width: 100%; */
+    width: 35.41666vw;
 }
 
 /* Show overlay when the checkbox is checked */
@@ -417,40 +448,175 @@
     display: flex;
     width: 100%;
     background-color: #0055A9;
+    /* border: 2px solid green; */
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .your-bag h2 {
     font-size: 2.5em;
     color: white;
+    margin-left: 2.0833vw;
 }
 
 .your-bag img {
     width: 2vw;
     height: 2vw;
     cursor: pointer; /* Suggest user can click to close */
+    margin-right: 2.0833vw;
 }
 
 /* Hat image styling */
 .hats img {
-    height: 4vw;
-    width: 3vw;
+    /* height: 4vw; */
+    margin-left: 1.5972vw; /*no need for margin right because im setting the width below*/
+    width: 11.11vw;
+    margin-top: 1.5972vw;
+}
+.hats .info{
+    margin-left: 1.736vw;
+    width: 19.375vw;
+    /* font-size: 1.5em; */
+}
+.hats{
+    display: flex;
+    /* font-size: 1.5em; */
+}
+.info .hat{
+    margin-top: 1.5972vw;
+    display: flex;
+    border: 2px solid green;
+    width: 100%;
+    justify-content: space-between;
+}
+.info .size{
+    /* border: 2px solid red; */
+    justify-content: left;
+}
+.info .color{
+    display: flex;
+}
+.info .quantity{
+    display: flex;
+}
+.hat strong, .size strong, .color strong, .quantity strong{
+    font-weight: 200;
+    font-size: 1.5em;
+}
+.size strong, .color strong, .quantity strong{
+    margin-right: 1vw;
+}
+.info a{
+    border: none;
+    width: fit-content;
+    justify-content: flex-end;
+    text-decoration: underline;
+}
+.info{
+    /* border: 2px solid white; */
+}
+#checkout-link{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0073E6;
+    margin-left: 1.59722vw;
+    margin-right: 1.59722vw;
+    width: 90%;
+    height: 2.6vw;
 }
 
+
+.one-clothingmh{
+    margin-left: .1vw;
+    margin-right: .1vw;
+    /* width: 10%; */
+    
+}
+.one-clothing
+
+
+
+
 /* Link styling */
+
+/* idk  */
 a {
     color: white;
     text-decoration: none;
     margin-top: 20px;
     display: inline-block;
 }
+/* idk  */
+
+[type="checkbox"]{
+    display: none;
+}
+/* AHHHHHH */
 
 
+.cart .add-to-cart{
+    margin-top: 2.84722vw;
+    font-size: 2em;
+    border: 2px solid #0073E6;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cart .add-to-cart:hover{
+    background-color: #0073E6;
+    color: #050133;
+}
+.cart .add-to-cart:active{
+    transform: scale(0.95);
+}
 
 
+.cart [type="checkbox"]:checked .overlay{
+    display: block;
+}
 
+.carasel .section-of-container button img{
+    transform: rotate(90deg);
+    /* background-color: red; */
+    /* border: 2px solid green; */
+    /* width: 100%; */
+    /* border: none; */
+    margin-bottom: 4vw; /*CLOSE ENOUGH*/
+}
+.carasel .section-of-container button:nth-child(1){
+    background-color: #050133;
+    border: none;
+    bottom: 20%;
+    
+}
+.add-to-cartmh{
+    /* border: 2px solid red; */
+}
+
+@media (max-width: 1383px){
+    .one-clothing .section-of-container h3{
+        font-size: 1em;
+    }
+    .section-of-container{
+        border: 3px solid green;
+    }
+    .add-to-cartmh{
+        justify-self: flex-end;
+    }
+}
+
+@media (max-width: 923px){
+    .you-will-also-like h2{
+        font-size: 2em;
+    }
+}
+@media (max-width: 779px){
+
+}
+/* skipping this for now... to future me, fix the add to cart... make it flex end or have margin... something so that it can go to the very bottom */
 /* ending of the overlay here */
 </style>
 </html>

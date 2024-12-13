@@ -160,9 +160,11 @@
             .card{
                 width: 27.777vw;
             }
-            .card .sub-hero{
-                /* height: 27.777vw; */
-                width: 100%;
+            .sub-hero {
+                width: 100%; /* Scale down to 80% of its container */
+                height: auto; /* Maintain aspect ratio */
+                margin: 0 auto; /* Center the image horizontally */
+                display: block; /* Ensures proper alignment */
             }
             .card .option h2{
                 /* border: 3px solid black; */
@@ -173,6 +175,32 @@
                 justify-self: center;
                 width: 100%; /*yeah i have no idea how to center the text... i dont want to spend all this time tryign to figure out how to make it work*/
                 margin-left: 2.8819vw;
+            }
+
+
+            @media (max-width: 1944px){
+                .card .option h2{
+                    font-size: 1.5em;
+                }
+            }
+            @media (max-width: 1192px){
+                .three-cards {
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+                }
+                .card {
+                    width: 100%;
+                    height: auto;
+                }
+                .sub-hero {
+                    width: 100%; /* Ensure the width is responsive */
+                    height: 50vw; /* Set the height to 33vw */
+                    object-fit: cover; /* Fill the container without distortion */
+                    object-position: top; /* Crop the bottom while showing the top */
+                    display: block; /* Align properly within the container */
+                }
+                /* skip and come back to it later :( */
             }
         </style>
 </body>
