@@ -6,6 +6,7 @@
     <title>Customization Review</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="css/nem-customization-review.css">
+    <link rel="icon" href="images/all/icon.png">
 </head>
 <body>
     <header>
@@ -122,7 +123,7 @@
             <p>Exterior Selection</p>
         </div>
         <div class="change-cont">
-            <a id="change-button" href="Nemesis-Exterior-Customization.html">
+            <a id="change-button" href="updated-nem-ext-customisation.html">
                 <p>Change</p>
                 <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
             </a>
@@ -154,7 +155,7 @@
             <p>Interior Selection</p>
         </div>
         <div class="change-cont">
-            <a id="change-button" href="Nemesis-Interior-Customization.html">
+            <a id="change-button" href="updated-nemisis-intcustimazation.html">
                 <p>Change</p>
                 <img src="images/all/right-facing-arrow.png" alt="rfa" class="rfa">
             </a>
@@ -222,8 +223,17 @@
                 <p class="legalthing">* All information is subject to change without notice. The manufacturer can not accept liability arising from the use of any in formation contained herein. Only an actual invoice issued by PCNA at the time a vehicle is sold . . .</p>
                 <a class="summary-readmore">Read More</a>
             </div>
+
+            <div class="lower-buttons">
+                <a href="updated-nem-ext-customisation.html"><h2> <img src="images/interior/down-arrow.png" alt="arrow-left"> change exteroir</h2></a>
+                <a href="updated-nemisis-intcustimazation.html"><h2> <img src="images/interior/down-arrow.png" alt="arrow-left"> change interior</h2></a>
+                <a href="Nemesis-Finalize.html"><h3> <img src="images/interior/down-arrow.png" alt="arrow-left"> inquery to trion</h3></a>
+            </div>
         </div>
+        
     </div>
+
+    
 
 
 
@@ -436,6 +446,32 @@
     width: 1.52777vw;
     height: 2.5vw;
     transition: ease-in-out .15s;
+}
+
+
+
+.lower-buttons{
+    /* display: inline-block; */
+    /* position: absolute; */
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    /* border: 2px solid white; */
+}
+.lower-buttons img{
+    transform: rotate(90deg);
+    
+}
+.lower-buttons a{
+    width: 30%;
+    border: 2px solid #0073E6;
+}
+.lower-buttons h3{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.lower-buttons a:nth-child(3) img{
+    rotate: 180deg;
 }
 
 </style>

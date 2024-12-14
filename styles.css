@@ -198,7 +198,7 @@ flex-direction: column;
 justify-content: space-between; /* Space out the rows of cards evenly */
 flex-grow: 1; /* Allow it to stretch and take available height */
 gap: 1rem; /* Spacing between rows */
-border: 2px solid green;
+/* border: 2px solid green; */
 }
 .two-cardsmh {
     width: 100%;
@@ -256,9 +256,10 @@ object-fit: cover; /* Ensure the image scales proportionally */
     height: 92.9vw;
 }
 
-.one-clothingmh {
+.one-clothingmh{
 color: white;
 width: 23.055vw;
+/* transition: all 0.3s ease; */
 /* border: red 3px solid; For testing layout */
 /* Remove margin-left to avoid uneven spacing */
 /* yeah you know what... ima just call it here, i have things to do in the moring... becides im getting cold :/ */
@@ -268,6 +269,7 @@ width: 23.055vw;
     background-color: white;
     width: 23.055vw;
     object-fit: cover; /*idk what this does, i just got reccomended it*/
+    transition: all 0.3s ease;
 }
 
 .one-clothingmh h3 {
@@ -276,6 +278,9 @@ width: 23.055vw;
 
 .one-clothingmh p {
     font-size: 1.5em;
+}
+.one-clothingmh img:hover{
+    scale: 0.95;
 }
 
 .colorsmh {
@@ -350,7 +355,60 @@ width: 23.055vw;
 .add-to-cartmh:active {
     transform: scale(0.95); /*kek*/
 }
-
+.bot-buttons{
+    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 37.3611vw;
+    /* border: 2px solid green; */
+    margin-left: auto;
+    margin-right: auto;
+    /* color: white; */
+    gap: 4vw;
+}
+.bot-buttons button{
+    border: none;
+    display: flex;
+    align-items: center;
+    width: 17.916vw;
+    height: 4.513vw;
+    background-color: #0073E6;
+    justify-content: space-between;
+}
+.bot-buttons button img{
+    height: 4.513vw;
+    margin: 1vw;
+}
+.bot-buttons a:nth-child(1) img{
+    rotate: 180deg;
+}
+.bot-buttons:nth-child(1){
+    border: 2px solid green;
+}
+.bot-buttons:last-child{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+.bot-buttons button h2{
+    font-size: 2em;
+    color: white;
+    margin: 2vw; /*could change this to center then gap if you wanted to*/
+}
+.bot-buttons button{
+    transition: all 0.3s ease;
+}
+.bot-buttons a{
+    text-decoration: none;
+}
+.bot-buttons button:hover{
+    border: 2px solid black;
+    background-color: #0073e694;
+}
+.bot-buttons button:active{
+    transform: scale(0.95);
+}
 @media (max-width: 692px){
     .jazzmh .mini-heromh{
        display: none;
@@ -359,7 +417,7 @@ width: 23.055vw;
        display: flex;
        /* align-content: center; */
        justify-content: center;
-       border: 2px solid green;
+       /* border: 2px solid green; */
        /* gap: 0; */
        width: 30%;
     }
