@@ -1,12 +1,12 @@
-<!-- coppied from black -->
+<!-- fix the add to cart before deployign to the rest -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hat Selection Black</title>
+    <title>Black Hat Selection</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/all/icon.png">
+    <link rel="icon" href="images/icons/med/icon.png">
     <link rel="stylesheet" href="css/hat.css">
 </head>
 <body>
@@ -18,8 +18,8 @@
             <div class="top-text">
                 <h4>Accessories</h4>
                 <h3>Trucker Cap</h3>
-                <h4>#15.00</h4>
-                <h4>Color: <strong>Black</strong></h4>
+                <h4>$15.00</h4>
+                <h4>Color: <strong>Red</strong></h4>
             </div>
             <div class="four-imgs">
                 <a href="hat-selection-black.html"><img src="merch/hat/small-black-hat.png" alt="small black hat"></a>
@@ -27,6 +27,14 @@
                 <a href="hat-selection-blue.html"><img src="merch/hat/small-blue-hat.png" alt="small black hat"></a>
                 <a href="hat-selection-red.html"><img src="merch/hat/small-red-hat.png" alt="small black hat"></a>
             </div>
+            <div class="hat-options">
+                
+                <a href="hat-selection-black.html"><div class="circle black"></div></a>
+                <a href="hat-selection-white.html"><div class="circle white"></div></a>
+                <a href="hat-selection-blue.html"><div class="circle blue"></div></a>
+                <a href="hat-selection-red.html"><div class="circle red"></div></a>
+            </div>
+            
             <div class="size">
                 <h3>Size: <strong>One Size Fits All</strong></h3>
                 <a href="#">Size Guide</a>
@@ -45,11 +53,12 @@
                             <h2>Your Bag: 1 item</h2>
                         
                         
+                            <input type="checkbox" id="cart-checkbox">
+                            <label for="cart-checkbox"><div class="lil-x"><img src="merch/hat/x.png" alt="close icon"></div></label>
                         
-                        <img src="merch/hat/x.png" alt="close icon">
                     </div>
                     <div class="hats">
-                        <img src="merch/hat/large-red-hat.png" alt="smaller black hat">
+                        <img src="merch/hat/large-red-hat.png" alt="smaller red hat">
                         <div class="info">
                             <div class="hat">
                                 <h2>Trucker Cap</h2>
@@ -61,13 +70,15 @@
                             </div>
                             <div class="color">
                                 <strong>Color:</strong>
-                                <h2> Black</h2>
+                                <h2> Red</h2>
                             </div>
                             <div class="quantity">
                                 <strong>Quantity:</strong>
                                 <h2>1</h2>
                             </div>
-                            <a href="#">REMOVE</a>
+                            <!-- <a href="#">REMOVE</a> -->
+                            <input type="checkbox" id="cart-checkbox">
+                            <label for="cart-checkbox"><div class="remove">Remove</div></label>
                         </div>
                     </div>
                     <div class="low-link">
@@ -88,7 +99,7 @@
                 <hr>
                 <div class="option-names">
                     <h2>Description</h2>
-                    <img src="merch/down-arrow.png" alt="donw-arrow">
+                    <img src="merch/down-arrow.png" alt="donw-arrow"> 
                 </div>
                 
                 <hr>
@@ -123,32 +134,37 @@
         <!-- THIS SECTION WILL LITERELLY BE JUST COPPIED AND PASTED FROM OTHERS 
             (THIS ONES FROM MERCH3-WOMEN.HTML) -->
         <!-- Custom circle buttons with input -->
-            <button> <img src="merch/down-arrow.png"></button>
-                <div class="one-clothingmh">
-                <img src="merch/hat/white-phone-case.png" alt="White Phone Case">
-                <h3>iPhone Phone Case</h3>
-                <p>$15.00</p>
-                <div class="colorsmh">
-                    <!-- Custom circle buttons with input -->
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="black" class="color-inputmh">
-                        <span class="color-blackmh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="white" class="color-inputmh">
-                        <span class="color-whitemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="blue" class="color-inputmh">
-                        <span class="color-bluemh"></span>
-                    </label>
-                    <label class="color-labelmh">
-                        <input type="radio" name="color" value="red" class="color-inputmh">
-                        <span class="color-redmh"></span>
-                    </label>
-                </div>
-                <button class="add-to-cartmh">Add to Cart</button>
-            </div>
+            <button> <img src="merch/down-arrow.png" alt="arrow back"></button>
+                    <div class="one-clothingmh">
+                        <img src="merch/hat/white-phone-case.png" alt="White Phone Case">
+                        <h3>iPhone Phone Case</h3>
+                        <p>$15.00</p>
+                        <div class="colorsmh">
+                            <!-- Custom circle buttons with input -->
+                            <label class="color-labelmh">
+                            <input type="radio" name="color" value="black" class="color-inputmh">
+                                <span class="color-blackmh"></span>
+                                </label>
+                            <label class="color-labelmh">
+                                <input type="radio" name="color" value="white" class="color-inputmh">
+                                <span class="color-whitemh"></span>
+                            </label>
+                            <label class="color-labelmh">
+                                <input type="radio" name="color" value="blue" class="color-inputmh">
+                                <span class="color-bluemh"></span>
+                            </label>
+                            <label class="color-labelmh">
+                                <input type="radio" name="color" value="red" class="color-inputmh">
+                                <span class="color-redmh"></span>
+                            </label>
+                        </div>
+
+                        <button class="add-to-cartmh">Add to Cart</button> <!--calling it quite for now because i kinda have a lot to do... remember red-->
+                            <!-- <a href="#"><div class="add-to-cartmh2">add to cart</div></a> -->
+                        
+                        <!-- <a href="#">add to cart</a> -->
+                        <!-- <button class="add-to-cartmh">Add to Cart</button> -->
+                    </div>
 
 
             <!-- second section -->
@@ -201,8 +217,9 @@
                         <input type="radio" name="color" value="red" class="color-inputmh">
                         <span class="color-redmh"></span>
                     </label>
+                    <!-- <button class="add-to-cartmh">Add to Cart</button> -->
                 </div>
-                <button class="add-to-cartmh">Add to Cart</button>
+                <button class="add-to-cartmh">Add to Cart</button> <!-- BRO I HAVE NO IDEA WHERE THE HELL THESE ARE WHEN I MAKE MY SCREEN SMALLER!!!!!-->
             </div>
 
             <!-- fourth section -->
@@ -236,7 +253,275 @@
         <img src="merch/right-arrow.png" alt="right arrow">
     </div>
     
+<style>
+    body{
+        /* height: 2000vw; */
+    }
+    .hidden{
+        cursor: pointer;
+    }
+    .hats label{
+        /* background-color: black; */
+        transition: all 0.3s ease;
+    }
+    .hats label:hover{
+        scale: 0.99;
+    }
+    .hat-options{
+        display: none;
+    }
+    .add-to-cartmh{
+        /* font-size: 20em; */
+    }
+    @media (max-width: 1800px){
+        .info .hat h2,
+        .info .size2 h2,
+        .info .color h2,
+        .info .quantity h2{
+            font-size: .75em;
+        }
+    }
+    @media (max-width: 1564px){
+        .one-clothingmh h3{
+            font-size: 1.5em;
+        }
+    }
+    @media (max-width: 1450px){
+        .info .hat h2,
+        .info .size2 h2,
+        .info .color h2,
+        .info .quantity h2{
+            font-size: .50em;
+        }
 
+        .info .hat strong,
+        .info .size2 strong,
+        .info .color strong,
+        .info .quantity strong{
+            font-size: .50em;
+        }
+        
+        .info label{
+            font-size: .75em;
+            /* border: 2px solid green; */
+            text-align: left;
+            text-decoration: underline;
+        }
+    }
+    @media (max-width: 1029px){
+        .one-clothingmh h3{
+            font-size: 1em;
+        }
+        .one-clothingmh p{
+            font-size: .75em;
+        }
+    }
+    @media (max-width: 943px){
+    .overlay .your-bag h2,
+    #checkout-link{
+        font-size: .75em;
+    }
+    #checkout-link {
+        height: 25%;
+        /* background-color: black; */
+        /* font-size: .5em; */
+    }
+    }
+    @media (max-width: 903px){
+        .size2{
+            /* border: 2px solid green; */
+            width: 30vw;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            /* align-self: center; */
+            justify-self: center;
+            width: 80%;
+        }
+        .container .left img{
+            width: 100%;
+            /* border: 20px solid green; */
+        }
+
+        .left {
+            width: 85.22727vw;
+            height: 86.8181vw;
+            /* overflow: hidden; */
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /*needs this so that i can crop the image*/
+            object-position: center;
+        }
+        .right .top-text:nth-child(1) h4{
+            font-size: 4em;
+        }
+        .right .top-text h3{
+            font-size: 3em;
+            /* border: 2px solid green; */
+            width: 80vw;
+        }
+        .right .top-text h4{
+            display: flex;
+        }
+        .right .top-text strong{
+            margin-left: 1vw;
+        }
+        .right .top-text:nth-child(1) h4{
+            /* background-color: black; */
+            font-size: 1.5em;
+        }
+
+        .four-imgs{
+            display: none;
+        }
+        
+
+        /* unhidden section */
+        .hat-options{
+            /* display: flex; */
+            /* align-items: center; */
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            /* border: 2px solid green; */
+        }
+        .hat-options .circle{
+            width: 5vw;
+            height: 5vw;
+            border-radius: 5vw;
+            /* background-color: white; */
+            transition: all 0.3s ease;
+        }
+        .hat-options .circle:hover{
+            border: solid 2px white; /*i hope this works lol*/
+        }
+        .hat-options .black{
+            background-color: black;
+        }
+        .hat-options .white{
+            background-color: white;
+
+        }
+        .hat-options .blue{
+            background-color: #0D0B9D;
+        }
+        .hat-options .red{
+            background-color: #B81212;
+        }
+        /* unhidden section */
+        .overlay{
+            /* border: 2px solid green; */
+            width: 80vw;
+            height: 50vw;
+        }
+        .overlay .hats{
+            height: 30vw;
+        }
+        .overlay .hats img{
+            width: 54%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .section-of-container button:nth-child(1), /*WOOOOOOO THIS DID IT CHAT!!!!! IT TOOK 40 MINS TO GET THIS DONE!!!!!*/
+        .arrow{
+            display: none;
+        }
+        .section-of-container{
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3vw;
+        }
+        .one-clothingmh{
+            /* border: 2px solid blueviolet; */
+            width: 40%;
+        }
+        .one-clothingmh img{
+            width: 100%;
+        }
+        .one-clothingmh h3{
+            font-size: 1.5em;
+        }
+        .one-clothingmh p{
+            font-size: 1.5em;
+        }
+    }
+    @media (max-width: 823px){
+        .info .hat{
+            width: 30vw;
+        }
+    }
+    @media (max-width: 617px){
+        .you-will-also-like h2{
+            font-size: 1.5em;
+        }
+        .cart{
+            width: 100%;
+        }
+        .hover{
+            /* border: 2px solid green; */
+            /* font-size: 1em; */
+            width: 100%;
+            /* background-color: black; */
+        }
+    
+    }
+    @media (max-width: 572px){
+        .info .size2 h2{
+            font-size: .4em;
+            /* border: 2px solid gold; */
+            width: 100%;
+
+        }
+    }
+    @media (max-width: 528px){
+        .cart input{
+            /* width: 2vw; */
+        }
+        .cart{
+            width: 100%;
+        }
+        .hover{
+            /* border: 2px solid green; */
+            /* font-size: 1em; */
+            width: 100%;
+            /* background-color: black; */
+        }
+        .size strong{
+            font-size: .5em;
+        }
+    }
+    @media (max-width: 511px){
+        .info .hat h2, .info .hat strong{
+            font-size: .38em;
+        }
+        .info .size2 h2{
+            font-size: .3em;
+        }
+    }
+    .info label .remove{
+font-size: .6em;
+    }
+    @media (max-width: 496px){
+
+    }
+    @media (max-width: 464px){
+        .you-will-also-like{
+            height: 12vw;
+            /* font */
+        }
+        .you-will-also-like h2{
+            font-size: 1.25em;
+        }
+    }
+</style>
     
 </body>
 </html>

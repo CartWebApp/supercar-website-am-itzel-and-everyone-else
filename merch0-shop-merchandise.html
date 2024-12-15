@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Merchandise</title>
     <link rel="icon" href="images/all/icon.png">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" href="images/icons/med/icon.png">
     
 </head>
 <body>
@@ -47,8 +49,120 @@
                 <img src="merch/rectangle-250-(2).png" alt="Acessories Merch Image" class="sub-hero">
             </a>
         </div>
+    </div>
+    
         
+<!-- FOOTER SECTION START -->
 
+
+
+
+<footer>
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Account</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Settings</a>
+            <a href="#">Saved Car Configurations</a>
+            <a href="#">Order History</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Dealerships</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Locations</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Nemesis RR</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Overview</a>
+            <a href="#">Customize</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Black Widow</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Overview</a>
+            <a href="#">Customize</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Services</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Insurance</a>
+            <a href="#">Part Replacement</a>
+            <a href="#">Customer Help</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Merchandise</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">All Merchandise</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Accessories</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>About Us</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Mission</a>
+            <a href="#">Press</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Legal</h2>
+        </div>
+        <div class="hyperlinksrf">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
+
+    <div class="accountrf">
+        <div class="headerrf">
+            <h2>Social</h2>
+        </div>
+        <div class="iconsrf">
+            <a href="#"><img src="images/all/instagram.png" alt="instagram logo" id="instagram"></a>
+            <a href="#"><img src="images/all/facebook.png" alt="facebook logo" id="facebook"></a>
+            <a href="#"><img src="images/all/linkedin.png" alt="linkedin logo" id="linkedin"></a>
+        </div>
+    </div>
+
+    <div class="belowrf">
+        <a href="index.html"><img src="images/all/icon.png" alt="trion logo"></a>
+        <h3>© 2025 by TRION.</h3>
+    </div>
+</footer>
+
+
+
+<!-- FOOTER SECTION END -->
 
 
 
@@ -143,6 +257,7 @@
             .option{
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
                 /* justify-content: center; */
             }
             .option .arrow{
@@ -173,7 +288,7 @@
                 margin-top: 1.11vw;
                 /* margin-left: 2.5vw; */
                 justify-self: center;
-                width: 100%; /*yeah i have no idea how to center the text... i dont want to spend all this time tryign to figure out how to make it work*/
+                /* width: 100%; yeah i have no idea how to center the text... i dont want to spend all this time tryign to figure out how to make it work */
                 margin-left: 2.8819vw;
             }
 
@@ -183,15 +298,32 @@
                     font-size: 1.5em;
                 }
             }
-            @media (max-width: 1192px){
+            @media (max-width: 1260px){
                 .three-cards {
-                    display: flex;
-                    flex-direction: column;
-                    height: auto;
+                    /* display: flex; */
+                    /* flex-direction: column; */
+                    /* height: auto; */
+
                 }
+                /* .card a >.option{
+                    display: flex;
+                    flex-direction: row;
+                    border: 2px solid green;
+                } */
+                 .option{
+                    display: flex;
+                    justify-content: center;
+                    gap: 2vw;
+                    /* border: 2px solid green; */
+                 }
+                 .card .option h2{
+                    font-size: 1em;
+                 }
                 .card {
-                    width: 100%;
-                    height: auto;
+                    /* display: flex; */
+                    /* flex-direction: row; */
+                    /* width: 100%; */
+                    /* height: 50vw; */
                 }
                 .sub-hero {
                     width: 100%; /* Ensure the width is responsive */
@@ -200,7 +332,46 @@
                     object-position: top; /* Crop the bottom while showing the top */
                     display: block; /* Align properly within the container */
                 }
-                /* skip and come back to it later :( */
+                
+            }
+            @media (max-width: 939px){
+                .bit-o-text a{
+                    width: 50vw;
+                    /* border: 2px solid green; */
+                }
+                .bit-o-text h3{
+                    width: 55vw;
+                }
+                .bit-o-text h2{
+                    font-size: 2em;
+                    width: 60vw;
+                    /* background-color: black; */
+                }
+                .bit-o-text h3{
+                    font-size: 1.2em;
+                }
+            }
+            @media (max-width: 890px){
+              .three-cards{
+                display: flex;
+                flex-direction: column;
+                /* width: 100%; */
+                margin-left: 4.54545vw;
+                margin-right: 4.54545vw;
+                gap: 7.5vw;
+              }  
+              .three-cards .card{
+                width: 100%;
+              }
+              .three-cards .card img{
+                height: 100%;
+              }
+            }
+            @media (max-width: 440px){
+                .bit-o-text a{
+                    width: 45vw;
+                }
+
             }
         </style>
 </body>

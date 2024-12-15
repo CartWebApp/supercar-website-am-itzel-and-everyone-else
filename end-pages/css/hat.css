@@ -168,7 +168,7 @@ justify-content: center;
 background-color: white;
 } */
 .baby-imgs{
-/* border: 2px solid red; */
+border: 2px solid red;
 }
 .carasel{
     position: relative;
@@ -361,12 +361,8 @@ display: inline-block;
 display: none;
 }
 /* AHHHHHH */
-#overlay{
-    width: 100%;
-}
-.cart{
-    width: 100%;
-}
+
+
 .cart .add-to-cart{
 margin-top: 2.84722vw;
 font-size: 2em;
@@ -383,7 +379,9 @@ transition: all 0.3s ease;
 background-color: #0073E6;
 color: #050133;
 }
-
+.cart .add-to-cart:active{
+/* transform: scale(0.95); */
+}
 
 
 .cart [type="checkbox"]:checked .overlay{
@@ -419,7 +417,9 @@ bottom: 20%;
 .one-clothing .section-of-container h3{
     font-size: 1em;
 }
-
+.section-of-container{
+    /* border: 3px solid green; */
+}
 .add-to-cartmh{
     justify-self: flex-end;
 }

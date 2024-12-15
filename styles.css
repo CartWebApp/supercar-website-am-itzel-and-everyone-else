@@ -195,10 +195,9 @@ body {
 .four-clothingmh {
 display: flex;
 flex-direction: column;
-justify-content: space-between; /* Space out the rows of cards evenly */
-flex-grow: 1; /* Allow it to stretch and take available height */
-gap: 1rem; /* Spacing between rows */
-/* border: 2px solid green; */
+justify-content: space-between;
+/* flex-grow: 1; */
+gap: 1rem;
 }
 .two-cardsmh {
     width: 100%;
@@ -240,7 +239,7 @@ justify-content: space-between;
 .entire-sectionmh {
     margin-top: 1.736vw;
 display: flex;
-gap: 2rem; /* Spacing between mini-hero and clothing section */
+gap: 2rem;
 align-items: stretch; /* Make both sections align with the tallest one */
 }
 .entire-sectionmh:nth-child(2){
@@ -334,7 +333,7 @@ width: 23.055vw;
 }
 
 /* Style the Add to Cart button */
-.add-to-cartmh {
+.add-to-cartmh{
     margin-top: auto;
     width: 100%;
     font-size: 1.25em;
@@ -346,7 +345,28 @@ width: 23.055vw;
     text-align: center;
     transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
 }
-
+.add-to-cartmh2{
+    /* border: 21px solid green; */
+    text-align: center;
+}
+.add-to-cartmh2{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    /* align-content: center; */
+    margin-top: auto;
+    width: 100%;
+    font-size: 1.25em;
+    border: #0073E6 3px solid;
+    color: white;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+}
 .add-to-cartmh:hover {
     background-color: #0073E6;
     color: #050133;
@@ -356,15 +376,47 @@ width: 23.055vw;
     transform: scale(0.95); /*kek*/
 }
 .bot-buttons{
+    margin-top: 3vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid green; */
+    gap: 2vw;
+    /* width: 15%; */
+    /* align-items: center; */
+    /* align-self: center; */
+    justify-content: center;
+    /* justify-self: center; */
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    /* border: 2px solid green; */
+}
+.bot-buttons button{
+    width: 6vw;
+    height: 6vw;
+    /* display: flex; */
+    background-color: #0073E6;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: 2em;
+}
+.bot-buttons button:hover{
+    scale: 0.95;
+}
+
+.bot-buttons a button{
+    color: white;
+    text-decoration: none;
+}
+
+/* .bot-buttons{
     margin-top: 4vw;
     display: flex;
     justify-content: center;
     align-self: center;
     width: 37.3611vw;
-    /* border: 2px solid green; */
     margin-left: auto;
     margin-right: auto;
-    /* color: white; */
     gap: 4vw;
 }
 .bot-buttons button{
@@ -387,14 +439,13 @@ width: 23.055vw;
     border: 2px solid green;
 }
 .bot-buttons:last-child{
-    /* border: 2px solid green; */
     display: flex;
     flex-direction: row-reverse;
 }
 .bot-buttons button h2{
     font-size: 2em;
     color: white;
-    margin: 2vw; /*could change this to center then gap if you wanted to*/
+    margin: 2vw;
 }
 .bot-buttons button{
     transition: all 0.3s ease;
@@ -408,21 +459,92 @@ width: 23.055vw;
 }
 .bot-buttons button:active{
     transform: scale(0.95);
-}
+} */
+ @media (max-width: 1366px){
+    .one-clothingmh h3{
+        height: 7vw;
+    }
+ }
+ @media (max-width: 1000px){
+    .one-clothingmh h3{
+        margin-bottom: 5vw;
+        font-size: 1.5em;
+    }
+ }
 @media (max-width: 692px){
+    .entire-sectionmh{
+        gap: 0;
+    }
+    .bit-o-textmh{
+        width: 70%;
+    }
+    .bit-o-textmh h2{
+        font-size: 2em;
+    }
+    .bit-o-textmh h3{
+        font-size: 1.5em;
+    }
     .jazzmh .mini-heromh{
        display: none;
     }
-    .two-cardsmhh{
-       display: flex;
+    .four-clothingmh{
+       /* display: flex; */
        /* align-content: center; */
        justify-content: center;
-       /* border: 2px solid green; */
+       align-items: center;
+       margin-left: auto;
+       margin-right: auto;
+       border: 2px solid green;
+       /* margin-top: 10vw; used for texting only */
        /* gap: 0; */
-       width: 30%;
+       /* width: 30%; */
     }
-   }
+    .two-cardsmh h3{
+        font-size: 1em;
+        /* background-color: black; */
+        height: 5vw;
+        margin-bottom: 2vw;
+    }
 
+
+
+
+    .one-clothingmh{
+        text-align: center;
+    }
+    .colorsmh{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .add-to-cartmh{
+        font-size: 1em;
+    }
+
+
+   }
+@media (max-width: 632px){
+    .all-merch-buttonmh p{
+        font-size: .6em;
+    }
+    .bot-buttons button{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+@media (max-width: 592px){
+    .add-to-cartmh{
+        font-size: .7em;
+    }
+    .two-cardsmh h3{
+        margin-bottom: 4vw;
+    }
+}
+@media (max-width: 474px){
+    .add-to-cartmh{
+        font-size: .6em;
+    }
+}
 
 /* end merchandice */
 /* end merchandice */
