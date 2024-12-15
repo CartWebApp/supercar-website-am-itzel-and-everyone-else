@@ -1,7 +1,9 @@
 * {
     color: white;
 }
-
+body{
+    overflow-x: hidden;
+}
 .banner-cont { 
     width: 99vw;
     display: flex;
@@ -284,7 +286,7 @@
 
 /* FIX HERE */
 .legalthing { 
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 300;
 }
 /* HERE */
@@ -302,4 +304,94 @@
 .summary-right .rightmoney { 
     font-size: 32px;
     font-weight: 300;
+}
+
+
+
+/* jeremy added here */
+
+@media (max-width: 1460px){
+    /* .lower-buttons */
+    .legalthing{
+        font-size: 1.5em;
+    }
+    .summary-readmore{
+        width: 100%;
+        /* top: 10px; */
+        /* border: 2px solid black; */
+    }
+}
+@media (max-width: 1283px){
+    .lower-buttons a{
+font-size: .75em;
+    }
+    .lower-buttons{
+        /* margin-top: 112vw; */
+        border: 2px solid white;
+        margin-top: 20vw !important;
+    }
+}
+@media (max-width: 1103px){
+    .lower-buttons{
+        position: inherit;
+        display: flex;
+        margin-top: 25vw !important;
+    }
+    .more{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid aqua;
+        flex-direction: column;
+        /* margin-top: 15vw; */
+    }
+    .more .legalthing{
+        display: flex;
+    }
+    .more .summary-readmore{
+        display: flex;
+        position: inherit;
+        border: 2px solid green;
+    }
+
+}
+@media (max-width: 1019px){
+    .selection-name { 
+        /* margin-top: 2.708vw; */
+        width: 30.208vw;
+        height: 4.778vw;
+        /* background-color: #003B76; */
+        /* display: flex; */
+        position: absolute;
+        /* align-self: flex-start; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    
+    }
+    .selection-name p { 
+        margin: 0;
+        color: white;
+        font-size: 1rem;
+    }
+    .lower-buttons{
+        margin-top: 50vw !important;
+    }
+    .section{
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin-top: 50vw; */
+        /* justify-content: center; */
+        /* border: 21px solid green; */
+        margin-top: 100vw;
+        margin-bottom: 100vw;
+        margin-left: auto;
+    }
+    .summary-right{
+        border: 21px solid green;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10vw;
+        /* uhu yup... im aboiring this lmao i cant read it */
+    }
+
 }
