@@ -1,3 +1,6 @@
+.body {
+    overflow-x: hidden;
+}
 .hero-img-stuff img{ 
     width: 100%;
 }
@@ -46,7 +49,7 @@
 .herobuttons p { 
     margin-left: 1.319vw;
     width: fit-content;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -77,7 +80,7 @@
 .car-quick-desc { 
     display: flex;
     flex-direction: row;
-    width: 99vw;
+    width: 100vw;
     height: 36.875vw;
 }
 .overlayed-photos {
@@ -93,12 +96,12 @@
 #overlayed-photo1 { 
     margin-top: 4.513vw;
     margin-left: 5.972vw;
-    box-shadow: 0px 0px 4px black;
+    box-shadow: 0px 0px .25rem black;
 }
 #overlayed-photo2 { 
     margin-top: 15.278vw;
     margin-left: 16.181vw;
-    box-shadow: 0px 0px 4px black;
+    box-shadow: 0px 0px .25rem black;
 }
 .car-quick-desc article { 
     display: flex;
@@ -170,9 +173,10 @@
     margin-top: 6.319vw;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
-.sideview-car-showcase img{ 
-    width: 99vw;
+.sideview-car-showcase > img{ 
+    width: 100%;
 }
 .sideview-car-showcase .customize-cont { 
     position: absolute;
@@ -193,7 +197,6 @@
     color: white;
     text-decoration: none;
     width: fit-content;
-    
 }
 
 #customize-button p { 
@@ -247,7 +250,7 @@
 .s-header { 
     display: flex;
     flex-direction: row;
-    width: 99vw;
+    width: 100vw;
     height: 21.181vw;
     color: white;
     align-items: center;
@@ -289,12 +292,12 @@
 }
 .s-card h3 { 
 
-    font-size: 40px;
+    font-size: 2.5rem;
     margin: 0;
     margin-top: 1.25vw;
 }
 .s-card article > p {
-    font-size: 32px;
+    font-size: 2rem;
     width: 24.514vw;
     height: 8.333vw;
     font-weight: 300;
@@ -310,14 +313,14 @@
     height: 4.514vw;
     border-style: solid;
     border-color:#0073E6;
-
+    margin-top: 1rem;
 }
 
 #learnmore p { 
     margin:0;
     margin-left: 1.319vw;
     line-height:normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     width: fit-content;
     font-weight: 600;
 }
@@ -329,7 +332,7 @@
 
 .merch-cont { 
     margin-top: 10.694vw;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     height: 52.083vw;
@@ -353,16 +356,19 @@
     margin: 0;
     line-height: normal;
     color: #0073E6;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 600;
     width: 28.543vw;
 }
 .merch-left article > p {
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     width: 29.167vw;
     margin: 0;
+}
+.merch-left img {
+    width: 100%;
 }
 
 #shopmerch { 
@@ -383,7 +389,7 @@
     margin:0;
     margin-left: 1.181vw;
     line-height:normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     width: fit-content;
     font-weight: 600;
 }
@@ -409,7 +415,7 @@
  .merch-right p { 
     position: absolute;
     align-self: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     margin: 0;
  }
@@ -420,14 +426,14 @@
 
  .about-us { 
     margin-top: 10.694vw;
-    width: 99vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     position: relative;
  }
 
  .about-us > img{ 
-    width: 99vw;
+    width: 100vw;
  }
 
  .about-us article { 
@@ -441,11 +447,11 @@
  .about-us article h2 { 
     margin: 0;
     color: #0073E6;
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 600;
  }
  .about-us article > p { 
-    font-size: 40px;
+    font-size: 2.5rem;
     color: white;
     width: 34.097vw;
     margin: 0;
@@ -469,11 +475,394 @@
     margin:0;
     margin-left: 1.181vw;
     line-height:normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     width: fit-content;
     font-weight: 600;
 }
 #aboutus .rfa {
     height: 2.394vw;
     width: 1.449vw;
+}
+.herobuttons:hover {
+    scale: .95; 
+}
+.customize-cont:hover {
+    scale: .95; 
+}
+#learnmore:hover {
+    scale: .95; 
+}
+@media (max-width: 1440px) {
+    :root { 
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+    :root {
+        font-size: 16px;
+    }
+    * {
+        overflow-x: hidden;
+    }
+    .hero-img-textcontent {
+        margin-top: 70vw;
+        width: 75.9090vw;
+        margin-left: 5.454vw;
+    }
+    .hero-img-textcontent h1 {
+        font-size: 2.625rem;
+    }
+    .hero-img-textcontent p {
+        font-size: 1.375rem;
+        width:75.9090vw;
+    }
+    .hero-img-stuff img { 
+        height: 199.31vw;
+        width: auto;
+    }
+    .hero-img-stuff { 
+        margin-left: -87.5vw;
+    }
+    .hero-button-cont { 
+        flex-direction: column;
+    }
+    .herobuttons p {
+        margin-left: 4.31818vw;
+        width: fit-content;
+        font-size: 1.5rem;
+    }
+    #discovermore-button { 
+        width: 57.727vw;
+        height: 12.5vw;
+    }
+    #build-button {
+        margin-left: 0;
+        width: 33.8636vw;
+        height: 12.5vw;
+    }
+    .rfa {
+        width: 4.0454vw;
+        height: 6.6295vw
+    }
+    .herobuttons .rfa {
+        margin-left: 4.5454vw;
+    }
+    .car-quick-desc {
+        flex-direction: column;
+        height: 203.1818vw;
+        width: 100vw;
+    }
+    .overlayed-photos { 
+        width: 100vw;
+        display: flex;
+        height: 112.2727vw;
+    }
+    .overlayed-photos img {
+        width: 69.429vw;
+        height: 69.429vw;
+    }
+    #overlayed-photo1 { 
+        margin-top: 6.3636vw;
+        margin-left: 5.909vw;
+    }
+    #overlayed-photo2 { 
+        margin-top: 42.7272vw;
+        margin-left: 24.772vw;
+    }
+    .car-quick-desc article { 
+        width: 88.18181vw;
+        margin-left: 5.909vw;
+    }
+    .car-quick-desc article > p {
+        width: fit-content;
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+        height: 31.8181vw;
+    }
+    .car-quick-desc article h2 {
+        font-size: 3rem;
+    }
+    .exclusivity-counter {
+        height: 161.1363vw;
+        width: 100vw;
+        margin: 0;
+        flex-direction: column;
+    }
+    .remaining { 
+        height: 70.68181vw;
+        width: 100vw;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .remaining img {
+        width: 63.8636vw;
+        height: 63.8636vw;
+    }
+    .exclusivity-counter article { 
+        width: 88.18181vw;
+    }
+    .exclusivity-counter article h2 { 
+        font-size: 3rem;
+    }
+    .exclusivity-counter article p {
+        font-size: 1.5rem;
+        line-height: 2.1875rem;
+    }
+    .exclusivity-counter .rightarrow {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10.454545vw;
+
+    }
+    .exclusivity-counter .rightarrow a {
+        border: solid #0073E6;
+        margin: 0;
+        padding: 0;
+    }
+    .exclusivity-counter .rightarrow a img {
+        margin-right: 2.564vw;
+        margin-bottom: -1vw;
+    }
+    .sideview-car-showcase { 
+        height: 62.954545vw;
+        background: linear-gradient(to right, black, transparent, black);
+        justify-content: space-between;
+    }
+    .sideview-car-showcase img { 
+        margin-top: 6vw;
+    } 
+    .sideview-car-showcase .customize-cont { 
+        position: relative;
+        width: 49.09090vw;
+        height: 12.5vw;
+        margin: 0;
+    }
+    .nem-name {
+        order: -1; 
+        position: relative;
+        margin: 0;
+        width: 38.636vw;
+        height: 8.409090vw;
+    }
+    .nem-name p {
+        font-size: 1.5rem;
+    }
+    #customize-button p {
+        font-size: 1.5rem;
+        margin-left: 4.318181vw;
+    }
+    #customize-button .rfa { 
+        width: 4.0454vw;
+        height: 6.6295vw;
+        margin: 0;
+        margin-left: 1.5rem;
+
+    }
+    .bw-showcase { 
+        background: none;
+
+    }
+    .bw-name {
+        order: -1; 
+        position: relative;
+        margin: 0;
+        width: 38.636vw;
+        height: 8.409090vw;
+    }
+    .bw-name p {
+        font-size: 1.5rem;
+    }
+
+    .bw-showcase > img { 
+        margin: 0;
+        height: 100%;
+        width: 165%;
+        margin-left: -60vw;
+    }
+
+    .bw-showcase .customize-cont {
+        position: absolute; 
+        margin: 0;
+        margin-top: 49.545454vw;
+        margin-right: 0.9090vw;
+    }
+    .bw-showcase .bw-name { 
+        position: absolute;
+        margin: 0;
+    }
+    .s-header { 
+        display: flex;
+        height: 47.9545vw;
+    }
+    .s-header h2 { 
+        align-self: flex-end;
+        font-size: 3rem;
+        margin: 0;
+        text-align: center;
+    }
+    .s-card-cont {
+        display: flex;
+        flex-direction: column;
+        height: 287.0454vw;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 100vw;
+    }
+    .s-card { 
+        width: 75.227vw;
+        height: 78.636vw;
+        margin-top: 1rem;
+    }
+    .s-card article {
+        width: 75.227vw;
+        height: 78.636vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-card article h3 {
+        font-size: 2rem;
+        text-align: center;
+        height: fit-content;
+    }
+    .s-card article > p {
+        width: 75.227vw;
+        height: fit-content;
+        font-size: 1.5rem;
+        text-align: center;
+        
+    }
+    #learnmore { 
+        width: 49.77272vw;
+        height: 12.5vw;
+        align-self: center;
+    }
+    #learnmore p {
+        font-size: 1.5rem;
+        margin-left: 4.3181vw;
+    }
+    #learnmore .rfa { 
+        width: 4.0454vw;
+        height: 6.6295vw;
+        margin-left: 4.3181vw;
+    }
+    
+    #s-card-1 article > img {
+        height: auto;
+        width: 25vw;
+    }
+    #s-card-2 {
+        margin-top: 18.8636vw;
+    }
+    #s-card-2 article > img  { 
+        width: 25vw;
+        height: auto;
+    }
+    #s-card-3 {
+        margin-top: 18.8636vw;
+    }
+    #s-card-3 article > img {
+        width: 25vw;
+        height: auto;
+    }
+    .merch-cont { 
+        flex-direction: column;
+        width: 100vw;
+        height: 174.772727vw;
+    }
+    .merch-left { 
+        width: 100vw;
+        height: 86.204545vw;
+    }
+    .merch-left article h2 {
+        font-size: 3rem;
+        width: fit-content;
+    }
+    .merch-left article > p {
+        font-size: 1.5rem;
+        width: 60vw;
+    }
+    #shopmerch p {
+        font-size: 1.5rem;
+        margin-left: 4.318181vw;
+    }
+    #shopmerch { 
+        width: 68.8636vw;
+        height: 12.5vw;
+    }
+    #shopmerch .rfa { 
+        width: 4.0454vw;
+        height: 6.6295vw;
+        margin-left: 3.409vw;
+    }
+
+
+
+    .merch-right {
+        width: 100vw;
+    }
+    .merch-right a img {
+        display: none;
+    }
+    .merch-right a p { 
+        align-self: flex-end;
+        margin-bottom: 9.0909vw;
+        font-size: 2rem;
+        margin-right: 3.8636vw;
+    }
+
+    .merch-right .men-link {
+        background: url(../images/home/menmerch.jpg);
+        width: 100vw;
+        height: 29.545454vw;
+    }
+    .merch-right .women-link {
+        background-image: url(../images/home/womenmerch.jpg);
+        width: 100vw;
+        height: 29.545454vw;
+    }
+    .merch-right .accessories-link {
+        background-image: url(../images/home/accessoriesmerch.jpg);
+        width: 100vw;
+        height: 29.545454vw;
+    }
+    .about-us { 
+        height: 86.2045vw;
+        width: 100vw;
+        background-image: url(../images/home/aboutusUX.jpg);
+    }
+    .about-us > img {
+        display: none;
+    }
+    .about-us article {
+        margin-top: 20.68181vw;
+        margin-left: 5.909090vw;
+    }
+    .about-us article h2 { 
+        font-size: 3rem;
+        
+    }
+    .about-us article > p { 
+        font-size: 1.5rem;
+        width: 85vw;
+    }
+    #aboutus {
+        width: 43.63636vw;
+        height: 12.5vw;
+    }
+    #aboutus p {
+        font-size: 1.5rem;
+        margin-left: 4.3181vw;
+    }
+
+    #aboutus .rfa {
+        width: 4.0454vw;
+        height: 6.6295vw;
+        margin-left: 4.3181vw;
+    }
+
 }

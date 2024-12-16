@@ -178,6 +178,7 @@
     /* poopybut added below */
     .ham-working .lil-x img{
         /* position: absolute; */
+        margin-left: 32vw;
         display: flex;
         height: 2.1527vw;
         justify-self: flex-end;
@@ -190,7 +191,8 @@
     padding-bottom: 5vw;
     width: 35.4166vw;
     position: absolute;
-    background-color: #050133;  
+    /*background-color: #050133;*/  
+    background-color: grey;
     z-index: 1000; /* Keeps it above other content */
     transform: translateX(-100%); /* Hides it off-screen initially */
     transition: ease-in-out .4s; /* Smooth animation */
@@ -198,7 +200,6 @@
 }
 
 .ham-working.active {
-
     transform: translateX(0); /* Brings it into view */
 }
 
@@ -283,6 +284,26 @@
     transition: ease-in-out .15s;
 }
 
+@media (max-width: 440px) {
+    .topnav {
+        height: 23.86363vw;
+    }
+    #nav-menu {
+        font-size: 1rem;
+    }
+    #nav-ham-menu img {
+        height: 5.227272vw;
+    }
+    #nav-mag-glass img { 
+        height: 7.04545vw;
+    }
+    #nav-profile img {
+        height: 7.04545vw;
+    }
+    .topnav ul li img {
+        height: 13.1818vw;
+    }
+}
 
 
 /* for mr gpt 
@@ -292,7 +313,6 @@ I want it to grow out of the main <a> tag that titles the sub section when it op
 
 </style>
 <script>
-
     document.addEventListener("DOMContentLoaded", () => {
         const hamMenu = document.getElementById("nav-ham-menu"); // Hamburger menu button
         const hamWorking = document.querySelector(".ham-working"); // The menu overlay

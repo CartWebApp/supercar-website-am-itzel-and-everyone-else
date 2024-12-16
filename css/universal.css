@@ -16,23 +16,25 @@ body{
     padding: 0;
     background-color: #050133;
     color: white;
-    width: 99vw;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* TOP NAVIGATION */
 
 header {
-    position: fixed;
+    
     margin:0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    width: 99vw;
-    z-index: 1;
+    width: 100vw;
     top: 0;
 }
 
 .topnav {
+    position: fixed;
+    z-index: 1;
     margin: 0;
     padding: 0;
     display: flex;
@@ -41,7 +43,7 @@ header {
     background: linear-gradient(to bottom,#050133, rgba(0,0,0,0));
     justify-content: center;
     align-items: center;
-    width: 99vw;
+    width: 100vw;
 }
 
 header ul {
@@ -101,88 +103,144 @@ header ul {
     padding-right: 1.744vw;
 }
 
-
-/* FOOTER */
-
-footer { 
-    background-color: #08006A;
-}
-footer .top{
-    width: fit-content;
-    margin-top: 9%;
+.ham-working .lil-x img{
+    /* position: absolute; */
+    margin-left: 32vw;
     display: flex;
-    justify-content: flex-start; 
-    margin-left: 8vw;
-
+    height: 2.1527vw;
+    justify-self: flex-end;
+    margin-right: 1.527vw;
+    margin-top: 1.527vw;
 }
-footer .middle{
-    width: fit-content;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 8vw;
+.ham-working {
+    /* position: fixed; Ensures it overlays the page */
+    height: fit-content;
+    padding-bottom: 5vw;
+    width: 35.4166vw;
+    position: absolute;
+    background-color: #050133;
 
+    z-index: 1000; /* Keeps it above other content */
+    transform: translateX(-100%); /* Hides it off-screen initially */
+    transition: ease-in-out .4s; /* Smooth animation */
+    margin-top: 6.944vw;
 }
 
-footer .bottom{
-    margin-top: 7.014vw;
+.ham-working.active {
+    transform: translateX(0); /* Brings it into view */
+}
+
+.ham-working .selections{
+    margin-left: 3.95833vw;
+}
+
+.selections img.active { 
+    rotate: 90deg;
+}
+
+
+
+.selections{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25.4861vw;
+    font-size: 2.5rem;
+    margin-bottom: .55555vw;
+    /* justify-content: center; */
     align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.2vw;
+    transition: ease-in-out 1s;
+}
+
+
+
+
+#nemesislink { 
+    margin-top: 3.63888vw;
+}
+.ham-working .selections:first-child{
+    margin-top: 8.125vw;
+}
+
+.selections > a{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 1.9444vw;
+    text-decoration: none;
+}
+
+.sub { 
+    display: flex;
     flex-direction: column;
-
-
+    width: 100%;
+    transition: ease-out .1s; 
+    height: 0px;
+    opacity: 0;
+    display: none;
+    transform: translateY(-5vw);
 }
-.account, .dealerships, .nemesis-rr, .black-widow, .services, .merchandise, .footer-about-us, .legal {
-    width: 18vw;
-    text-overflow: none;
 
-}
-
-.social { 
-    align-self: flex-start;
-    width: 18vw;
-    text-overflow: none;
-}
-footer a{
-    margin-top: 10%;
-    font-size: 1.5rem;
+.sub a { 
     color: white;
     text-decoration: none;
     width: fit-content;
-    /* font-size: 24px; */
 }
-footer a:hover { 
+.sub.active { 
+    display: flex;
+    opacity: 1;
+    height: fit-content;
+    transform: translate(0);
+    transition: ease-in-out .25s; 
+}
+
+.sub.active a { 
+    margin-left: 5vw;
+}
+
+.lil-x img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.selections img { 
+    width: 1.52777vw;
+    height: 2.5vw;
+    transition: ease-in-out .15s;
+}
+.rfa:hover {
+    transform: translateX(.75vw);
+    transition: ease-in-out 1s;
+}
+.hmrfa:hover {
     cursor: pointer;
 }
 
-footer .bot-deets{
-    font-size: .9em;
-}
-footer h2{
-    margin-top: 30%;
-    /* font-size: 32px; */
-    font-size: 2rem;
-}
-footer h3{
-    margin-top: 2%;
-}
+@media (max-width: 440px) {
+    .topnav {
+        height: 23.86363vw;
+    }
 
-#instagram, #linkedin, #facebook { 
-    margin-top: 2vw;
-    height: 3vw;
+    #nav-menu {
+        font-size: 1rem;
+    }
 
-    
-}
-.icons { 
-    display: flex;
-    width: 70%;
-    justify-content: space-between;
+    #nav-ham-menu img {
+        height: 5.227272vw;
+    }
+    #nav-mag-glass img { 
+        height: 7.04545vw;
+    }
+    #nav-profile img {
+        height: 7.04545vw;
+    }
+    .topnav ul li img {
+        height: 13.1818vw;
+    }
 
-}
-.footermedia { 
-    display: flex;
-    flex-direction: column;
-}
-#footer-tri-icon { 
-    height: 5vw;
 
 }
+
+
