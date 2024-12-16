@@ -327,7 +327,7 @@ font-size: .75em;
     }
     .lower-buttons{
         /* margin-top: 112vw; */
-        border: 2px solid white;
+        /* border: 2px solid white; */
         margin-top: 20vw !important;
     }
 }
